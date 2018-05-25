@@ -1,0 +1,3720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStructExchangeTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <structExchangeTable>
+    <orig />
+    <code>29985</code>
+    <utf8Code>13314</utf8Code>
+    <sjisCode>61504</sjisCode>
+    <text>追加漢字　※1</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29986</code>
+    <utf8Code>55360</utf8Code>
+    <sjisCode>61505</sjisCode>
+    <text>追加漢字　※2</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29987</code>
+    <utf8Code>20221</utf8Code>
+    <sjisCode>61506</sjisCode>
+    <text>追加漢字　※3</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29988</code>
+    <utf8Code>20223</utf8Code>
+    <sjisCode>61507</sjisCode>
+    <text>追加漢字　※4</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29989</code>
+    <utf8Code>20378</utf8Code>
+    <sjisCode>61508</sjisCode>
+    <text>追加漢字　※5</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29990</code>
+    <utf8Code>20425</utf8Code>
+    <sjisCode>61509</sjisCode>
+    <text>追加漢字　※6</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29991</code>
+    <utf8Code>20636</utf8Code>
+    <sjisCode>61510</sjisCode>
+    <text>追加漢字　※7</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29992</code>
+    <utf8Code>20766</utf8Code>
+    <sjisCode>61511</sjisCode>
+    <text>追加漢字　※8</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29993</code>
+    <utf8Code>20924</utf8Code>
+    <sjisCode>61512</sjisCode>
+    <text>追加漢字　※9</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29994</code>
+    <utf8Code>13599</utf8Code>
+    <sjisCode>61513</sjisCode>
+    <text>追加漢字　※10</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29995</code>
+    <utf8Code>21255</utf8Code>
+    <sjisCode>61514</sjisCode>
+    <text>追加漢字　※11</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29996</code>
+    <utf8Code>21345</utf8Code>
+    <sjisCode>61515</sjisCode>
+    <text>追加漢字　※12</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29997</code>
+    <utf8Code>21356</utf8Code>
+    <sjisCode>61516</sjisCode>
+    <text>追加漢字　※13</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29998</code>
+    <utf8Code>35449</utf8Code>
+    <sjisCode>61517</sjisCode>
+    <text>追加漢字　※14</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>29999</code>
+    <utf8Code>55362</utf8Code>
+    <sjisCode>61518</sjisCode>
+    <text>追加漢字　※15</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30000</code>
+    <utf8Code>21581</utf8Code>
+    <sjisCode>61519</sjisCode>
+    <text>追加漢字　※16</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30001</code>
+    <utf8Code>21654</utf8Code>
+    <sjisCode>61520</sjisCode>
+    <text>追加漢字　※17</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30002</code>
+    <utf8Code>21660</utf8Code>
+    <sjisCode>61521</sjisCode>
+    <text>追加漢字　※18</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30003</code>
+    <utf8Code>21673</utf8Code>
+    <sjisCode>61522</sjisCode>
+    <text>追加漢字　※19</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30004</code>
+    <utf8Code>21774</utf8Code>
+    <sjisCode>61523</sjisCode>
+    <text>追加漢字　※20</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30005</code>
+    <utf8Code>21834</utf8Code>
+    <sjisCode>61524</sjisCode>
+    <text>追加漢字　※21</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30006</code>
+    <utf8Code>22130</utf8Code>
+    <sjisCode>61525</sjisCode>
+    <text>追加漢字　※22</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30007</code>
+    <utf8Code>22244</utf8Code>
+    <sjisCode>61526</sjisCode>
+    <text>追加漢字　※23</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30008</code>
+    <utf8Code>22323</utf8Code>
+    <sjisCode>61527</sjisCode>
+    <text>追加漢字　※24</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30009</code>
+    <utf8Code>22324</utf8Code>
+    <sjisCode>61528</sjisCode>
+    <text>追加漢字　※25</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30010</code>
+    <utf8Code>64016</utf8Code>
+    <sjisCode>61529</sjisCode>
+    <text>追加漢字　※26</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30011</code>
+    <utf8Code>22656</utf8Code>
+    <sjisCode>61530</sjisCode>
+    <text>追加漢字　※27</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30012</code>
+    <utf8Code>23012</utf8Code>
+    <sjisCode>61531</sjisCode>
+    <text>追加漢字　※28</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30013</code>
+    <utf8Code>23075</utf8Code>
+    <sjisCode>61532</sjisCode>
+    <text>追加漢字　※29</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30014</code>
+    <utf8Code>23125</utf8Code>
+    <sjisCode>61533</sjisCode>
+    <text>追加漢字　※30</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30015</code>
+    <utf8Code>23532</utf8Code>
+    <sjisCode>61534</sjisCode>
+    <text>追加漢字　※31</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30016</code>
+    <utf8Code>64017</utf8Code>
+    <sjisCode>61535</sjisCode>
+    <text>追加漢字　※32</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30017</code>
+    <utf8Code>14306</utf8Code>
+    <sjisCode>61536</sjisCode>
+    <text>追加漢字　※33</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30018</code>
+    <utf8Code>24236</utf8Code>
+    <sjisCode>61537</sjisCode>
+    <text>追加漢字　※34</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30019</code>
+    <utf8Code>24372</utf8Code>
+    <sjisCode>61538</sjisCode>
+    <text>追加漢字　※35</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30020</code>
+    <utf8Code>24389</utf8Code>
+    <sjisCode>61539</sjisCode>
+    <text>追加漢字　※36</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30021</code>
+    <utf8Code>24503</utf8Code>
+    <sjisCode>61540</sjisCode>
+    <text>追加漢字　※37</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30022</code>
+    <utf8Code>24599</utf8Code>
+    <sjisCode>61541</sjisCode>
+    <text>追加漢字　※38</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30023</code>
+    <utf8Code>64107</utf8Code>
+    <sjisCode>61542</sjisCode>
+    <text>追加漢字　※39</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30024</code>
+    <utf8Code>24880</utf8Code>
+    <sjisCode>61543</sjisCode>
+    <text>追加漢字　※40</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30025</code>
+    <utf8Code>26148</utf8Code>
+    <sjisCode>61544</sjisCode>
+    <text>追加漢字　※41</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30026</code>
+    <utf8Code>26312</utf8Code>
+    <sjisCode>61545</sjisCode>
+    <text>追加漢字　※42</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30027</code>
+    <utf8Code>26329</utf8Code>
+    <sjisCode>61546</sjisCode>
+    <text>追加漢字　※43</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30028</code>
+    <utf8Code>26362</utf8Code>
+    <sjisCode>61547</sjisCode>
+    <text>追加漢字　※44</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30029</code>
+    <utf8Code>26363</utf8Code>
+    <sjisCode>61548</sjisCode>
+    <text>追加漢字　※45</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30030</code>
+    <utf8Code>26706</utf8Code>
+    <sjisCode>61549</sjisCode>
+    <text>追加漢字　※46</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30031</code>
+    <utf8Code>40900</utf8Code>
+    <sjisCode>61550</sjisCode>
+    <text>追加漢字　※47</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30032</code>
+    <utf8Code>26897</utf8Code>
+    <sjisCode>61551</sjisCode>
+    <text>追加漢字　※48</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30033</code>
+    <utf8Code>26939</utf8Code>
+    <sjisCode>61552</sjisCode>
+    <text>追加漢字　※49</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30034</code>
+    <utf8Code>27205</utf8Code>
+    <sjisCode>61553</sjisCode>
+    <text>追加漢字　※50</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30035</code>
+    <utf8Code>27281</utf8Code>
+    <sjisCode>61554</sjisCode>
+    <text>追加漢字　※51</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30036</code>
+    <utf8Code>27355</utf8Code>
+    <sjisCode>61555</sjisCode>
+    <text>追加漢字　※52</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30037</code>
+    <utf8Code>55372</utf8Code>
+    <sjisCode>61556</sjisCode>
+    <text>追加漢字　※53</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30038</code>
+    <utf8Code>57342</utf8Code>
+    <sjisCode>61557</sjisCode>
+    <text>追加漢字　※54</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30039</code>
+    <utf8Code>55373</utf8Code>
+    <sjisCode>61558</sjisCode>
+    <text>追加漢字　※55</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30040</code>
+    <utf8Code>27633</utf8Code>
+    <sjisCode>61559</sjisCode>
+    <text>追加漢字　※56</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30041</code>
+    <utf8Code>27872</utf8Code>
+    <sjisCode>61560</sjisCode>
+    <text>追加漢字　※57</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30042</code>
+    <utf8Code>27950</utf8Code>
+    <sjisCode>61561</sjisCode>
+    <text>追加漢字　※58</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30043</code>
+    <utf8Code>64069</utf8Code>
+    <sjisCode>61562</sjisCode>
+    <text>追加漢字　※59</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30044</code>
+    <utf8Code>28095</utf8Code>
+    <sjisCode>61563</sjisCode>
+    <text>追加漢字　※60</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30045</code>
+    <utf8Code>28106</utf8Code>
+    <sjisCode>61564</sjisCode>
+    <text>追加漢字　※61</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30046</code>
+    <utf8Code>28152</utf8Code>
+    <sjisCode>61565</sjisCode>
+    <text>追加漢字　※62</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30047</code>
+    <utf8Code>64070</utf8Code>
+    <sjisCode>61566</sjisCode>
+    <text>追加漢字　※63</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30048</code>
+    <utf8Code>28510</utf8Code>
+    <sjisCode>61568</sjisCode>
+    <text>追加漢字　※64</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30049</code>
+    <utf8Code>28665</utf8Code>
+    <sjisCode>61569</sjisCode>
+    <text>追加漢字　※65</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30050</code>
+    <utf8Code>28772</utf8Code>
+    <sjisCode>61570</sjisCode>
+    <text>追加漢字　※66</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30051</code>
+    <utf8Code>64108</utf8Code>
+    <sjisCode>61571</sjisCode>
+    <text>追加漢字　※67</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30052</code>
+    <utf8Code>55376</utf8Code>
+    <sjisCode>61572</sjisCode>
+    <text>追加漢字　※68</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30053</code>
+    <utf8Code>28999</utf8Code>
+    <sjisCode>61573</sjisCode>
+    <text>追加漢字　※69</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30054</code>
+    <utf8Code>29121</utf8Code>
+    <sjisCode>61574</sjisCode>
+    <text>追加漢字　※70</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30055</code>
+    <utf8Code>29184</utf8Code>
+    <sjisCode>61575</sjisCode>
+    <text>追加漢字　※71</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30056</code>
+    <utf8Code>29599</utf8Code>
+    <sjisCode>61576</sjisCode>
+    <text>追加漢字　※72</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30057</code>
+    <utf8Code>29608</utf8Code>
+    <sjisCode>61577</sjisCode>
+    <text>追加漢字　※73</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30058</code>
+    <utf8Code>29641</utf8Code>
+    <sjisCode>61578</sjisCode>
+    <text>追加漢字　※74</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30059</code>
+    <utf8Code>29654</utf8Code>
+    <sjisCode>61579</sjisCode>
+    <text>追加漢字　※75</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30060</code>
+    <utf8Code>29723</utf8Code>
+    <sjisCode>61580</sjisCode>
+    <text>追加漢字　※76</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30061</code>
+    <utf8Code>29729</utf8Code>
+    <sjisCode>61581</sjisCode>
+    <text>追加漢字　※77</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30062</code>
+    <utf8Code>64074</utf8Code>
+    <sjisCode>61582</sjisCode>
+    <text>追加漢字　※78</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30063</code>
+    <utf8Code>29734</utf8Code>
+    <sjisCode>61583</sjisCode>
+    <text>追加漢字　※79</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30064</code>
+    <utf8Code>29738</utf8Code>
+    <sjisCode>61584</sjisCode>
+    <text>追加漢字　※80</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30065</code>
+    <utf8Code>29740</utf8Code>
+    <sjisCode>61585</sjisCode>
+    <text>追加漢字　※81</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30066</code>
+    <utf8Code>29753</utf8Code>
+    <sjisCode>61586</sjisCode>
+    <text>追加漢字　※82</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30067</code>
+    <utf8Code>29771</utf8Code>
+    <sjisCode>61587</sjisCode>
+    <text>追加漢字　※83</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30068</code>
+    <utf8Code>16090</utf8Code>
+    <sjisCode>61588</sjisCode>
+    <text>追加漢字　※84</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30069</code>
+    <utf8Code>30069</utf8Code>
+    <sjisCode>61589</sjisCode>
+    <text>追加漢字　※85</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30070</code>
+    <utf8Code>30081</utf8Code>
+    <sjisCode>61590</sjisCode>
+    <text>追加漢字　※86</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30071</code>
+    <utf8Code>30578</utf8Code>
+    <sjisCode>61591</sjisCode>
+    <text>追加漢字　※87</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30072</code>
+    <utf8Code>16531</utf8Code>
+    <sjisCode>61592</sjisCode>
+    <text>追加漢字　※88</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30073</code>
+    <utf8Code>30920</utf8Code>
+    <sjisCode>61593</sjisCode>
+    <text>追加漢字　※89</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30074</code>
+    <utf8Code>30944</utf8Code>
+    <sjisCode>61594</sjisCode>
+    <text>追加漢字　※90</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30075</code>
+    <utf8Code>31047</utf8Code>
+    <sjisCode>61595</sjisCode>
+    <text>追加漢字　※91</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30076</code>
+    <utf8Code>31150</utf8Code>
+    <sjisCode>61596</sjisCode>
+    <text>追加漢字　※92</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30077</code>
+    <utf8Code>40902</utf8Code>
+    <sjisCode>61597</sjisCode>
+    <text>追加漢字　※93</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30078</code>
+    <utf8Code>16643</utf8Code>
+    <sjisCode>61598</sjisCode>
+    <text>追加漢字　※94</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30241</code>
+    <utf8Code>40901</utf8Code>
+    <sjisCode>61599</sjisCode>
+    <text>追加漢字　※95</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30242</code>
+    <utf8Code>31194</utf8Code>
+    <sjisCode>61600</sjisCode>
+    <text>追加漢字　※96</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30243</code>
+    <utf8Code>31262</utf8Code>
+    <sjisCode>61601</sjisCode>
+    <text>追加漢字　※97</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30244</code>
+    <utf8Code>31615</utf8Code>
+    <sjisCode>61602</sjisCode>
+    <text>追加漢字　※98</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30245</code>
+    <utf8Code>31793</utf8Code>
+    <sjisCode>61603</sjisCode>
+    <text>追加漢字　※99</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30246</code>
+    <utf8Code>16996</utf8Code>
+    <sjisCode>61604</sjisCode>
+    <text>追加漢字　※100</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30247</code>
+    <utf8Code>32139</utf8Code>
+    <sjisCode>61605</sjisCode>
+    <text>追加漢字　※101</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30248</code>
+    <utf8Code>32673</utf8Code>
+    <sjisCode>61606</sjisCode>
+    <text>追加漢字　※102</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30249</code>
+    <utf8Code>33048</utf8Code>
+    <sjisCode>61607</sjisCode>
+    <text>追加漢字　※103</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30250</code>
+    <utf8Code>33082</utf8Code>
+    <sjisCode>61608</sjisCode>
+    <text>追加漢字　※104</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30251</code>
+    <utf8Code>64109</utf8Code>
+    <sjisCode>61609</sjisCode>
+    <text>追加漢字　※105</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30252</code>
+    <utf8Code>33454</utf8Code>
+    <sjisCode>61610</sjisCode>
+    <text>追加漢字　※106</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30253</code>
+    <utf8Code>33883</utf8Code>
+    <sjisCode>61611</sjisCode>
+    <text>追加漢字　※107</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30254</code>
+    <utf8Code>34012</utf8Code>
+    <sjisCode>61612</sjisCode>
+    <text>追加漢字　※108</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30255</code>
+    <utf8Code>34028</utf8Code>
+    <sjisCode>61613</sjisCode>
+    <text>追加漢字　※109</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30256</code>
+    <utf8Code>34137</utf8Code>
+    <sjisCode>61614</sjisCode>
+    <text>追加漢字　※110</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30257</code>
+    <utf8Code>34254</utf8Code>
+    <sjisCode>61615</sjisCode>
+    <text>追加漢字　※111</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30258</code>
+    <utf8Code>34645</utf8Code>
+    <sjisCode>61616</sjisCode>
+    <text>追加漢字　※112</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30259</code>
+    <utf8Code>34796</utf8Code>
+    <sjisCode>61617</sjisCode>
+    <text>追加漢字　※113</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30260</code>
+    <utf8Code>34827</utf8Code>
+    <sjisCode>61618</sjisCode>
+    <text>追加漢字　※114</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30261</code>
+    <utf8Code>35061</utf8Code>
+    <sjisCode>61619</sjisCode>
+    <text>追加漢字　※115</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30262</code>
+    <utf8Code>35282</utf8Code>
+    <sjisCode>61620</sjisCode>
+    <text>追加漢字　※116</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30263</code>
+    <utf8Code>35574</utf8Code>
+    <sjisCode>61621</sjisCode>
+    <text>追加漢字　※117</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30264</code>
+    <utf8Code>36302</utf8Code>
+    <sjisCode>61622</sjisCode>
+    <text>追加漢字　※118</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30265</code>
+    <utf8Code>36795</utf8Code>
+    <sjisCode>61623</sjisCode>
+    <text>追加漢字　※119</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30266</code>
+    <utf8Code>36854</utf8Code>
+    <sjisCode>61624</sjisCode>
+    <text>追加漢字　※120</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30267</code>
+    <utf8Code>37085</utf8Code>
+    <sjisCode>61625</sjisCode>
+    <text>追加漢字　※121</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30268</code>
+    <utf8Code>37159</utf8Code>
+    <sjisCode>61626</sjisCode>
+    <text>追加漢字　※122</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30269</code>
+    <utf8Code>37165</utf8Code>
+    <sjisCode>61627</sjisCode>
+    <text>追加漢字　※123</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30270</code>
+    <utf8Code>37298</utf8Code>
+    <sjisCode>61628</sjisCode>
+    <text>追加漢字　※124</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30271</code>
+    <utf8Code>37427</utf8Code>
+    <sjisCode>61629</sjisCode>
+    <text>追加漢字　※125</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30272</code>
+    <utf8Code>37512</utf8Code>
+    <sjisCode>61630</sjisCode>
+    <text>追加漢字　※126</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30273</code>
+    <utf8Code>37665</utf8Code>
+    <sjisCode>61631</sjisCode>
+    <text>追加漢字　※127</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30274</code>
+    <utf8Code>37704</utf8Code>
+    <sjisCode>61632</sjisCode>
+    <text>追加漢字　※128</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30275</code>
+    <utf8Code>38290</utf8Code>
+    <sjisCode>61633</sjisCode>
+    <text>追加漢字　※129</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30276</code>
+    <utf8Code>38622</utf8Code>
+    <sjisCode>61634</sjisCode>
+    <text>追加漢字　※130</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30277</code>
+    <utf8Code>39171</utf8Code>
+    <sjisCode>61635</sjisCode>
+    <text>追加漢字　※131</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30278</code>
+    <utf8Code>39232</utf8Code>
+    <sjisCode>61636</sjisCode>
+    <text>追加漢字　※132</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30279</code>
+    <utf8Code>39641</utf8Code>
+    <sjisCode>61637</sjisCode>
+    <text>追加漢字　※133</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30280</code>
+    <utf8Code>39894</utf8Code>
+    <sjisCode>61638</sjisCode>
+    <text>追加漢字　※134</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30281</code>
+    <utf8Code>40407</utf8Code>
+    <sjisCode>61639</sjisCode>
+    <text>追加漢字　※135</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30282</code>
+    <utf8Code>40628</utf8Code>
+    <sjisCode>61640</sjisCode>
+    <text>追加漢字　※136</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>30283</code>
+    <utf8Code>40629</utf8Code>
+    <sjisCode>61641</sjisCode>
+    <text>追加漢字　※137</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31265</code>
+    <utf8Code>57545</utf8Code>
+    <sjisCode>62111</sjisCode>
+    <text>事故</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31266</code>
+    <utf8Code>57546</utf8Code>
+    <sjisCode>62112</sjisCode>
+    <text>故障者</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31267</code>
+    <utf8Code>57547</utf8Code>
+    <sjisCode>62113</sjisCode>
+    <text>障害物</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31268</code>
+    <utf8Code>57548</utf8Code>
+    <sjisCode>62114</sjisCode>
+    <text>工事</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31269</code>
+    <utf8Code>57549</utf8Code>
+    <sjisCode>62115</sjisCode>
+    <text>凍結</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31270</code>
+    <utf8Code>57550</utf8Code>
+    <sjisCode>62116</sjisCode>
+    <text>作業</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31272</code>
+    <utf8Code>57552</utf8Code>
+    <sjisCode>62118</sjisCode>
+    <text>通行止め</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31273</code>
+    <utf8Code>57553</utf8Code>
+    <sjisCode>62119</sjisCode>
+    <text>片側交互通行</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31274</code>
+    <utf8Code>57554</utf8Code>
+    <sjisCode>62120</sjisCode>
+    <text>チェーン規制</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31275</code>
+    <utf8Code>57555</utf8Code>
+    <sjisCode>62121</sjisCode>
+    <text>進入禁止</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31280</code>
+    <utf8Code>57560</utf8Code>
+    <sjisCode>62126</sjisCode>
+    <text>駐車場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31281</code>
+    <utf8Code>57561</utf8Code>
+    <sjisCode>62127</sjisCode>
+    <text>駐車場(閉）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31284</code>
+    <utf8Code>57564</utf8Code>
+    <sjisCode>62130</sjisCode>
+    <text>対面通行１</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31285</code>
+    <utf8Code>57565</utf8Code>
+    <sjisCode>62131</sjisCode>
+    <text>対面通行２</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31286</code>
+    <utf8Code>57566</utf8Code>
+    <sjisCode>62132</sjisCode>
+    <text>車線規制１</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31287</code>
+    <utf8Code>57567</utf8Code>
+    <sjisCode>62133</sjisCode>
+    <text>車線規制２</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31288</code>
+    <utf8Code>57568</utf8Code>
+    <sjisCode>62134</sjisCode>
+    <text>徐行１</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31289</code>
+    <utf8Code>57569</utf8Code>
+    <sjisCode>62135</sjisCode>
+    <text>徐行２</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31290</code>
+    <utf8Code>57570</utf8Code>
+    <sjisCode>62136</sjisCode>
+    <text>入口閉鎖１</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31291</code>
+    <utf8Code>57571</utf8Code>
+    <sjisCode>62137</sjisCode>
+    <text>入口閉鎖２</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31292</code>
+    <utf8Code>57572</utf8Code>
+    <sjisCode>62138</sjisCode>
+    <text>大型通行止め１</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31293</code>
+    <utf8Code>57573</utf8Code>
+    <sjisCode>62139</sjisCode>
+    <text>大型通行止め２</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31294</code>
+    <utf8Code>57574</utf8Code>
+    <sjisCode>62140</sjisCode>
+    <text>入口制限１</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31295</code>
+    <utf8Code>57575</utf8Code>
+    <sjisCode>62141</sjisCode>
+    <text>入口制限２</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31296</code>
+    <utf8Code>57576</utf8Code>
+    <sjisCode>62142</sjisCode>
+    <text>速度制限基本</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31297</code>
+    <utf8Code>57577</utf8Code>
+    <sjisCode>62143</sjisCode>
+    <text>10km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31298</code>
+    <utf8Code>57578</utf8Code>
+    <sjisCode>62144</sjisCode>
+    <text>20km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31299</code>
+    <utf8Code>57579</utf8Code>
+    <sjisCode>62145</sjisCode>
+    <text>30km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31300</code>
+    <utf8Code>57580</utf8Code>
+    <sjisCode>62146</sjisCode>
+    <text>40km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31301</code>
+    <utf8Code>57581</utf8Code>
+    <sjisCode>62147</sjisCode>
+    <text>50km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31302</code>
+    <utf8Code>57582</utf8Code>
+    <sjisCode>62148</sjisCode>
+    <text>60km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31303</code>
+    <utf8Code>57583</utf8Code>
+    <sjisCode>62149</sjisCode>
+    <text>70km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31304</code>
+    <utf8Code>57584</utf8Code>
+    <sjisCode>62150</sjisCode>
+    <text>80km/h</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31309</code>
+    <utf8Code>9361</utf8Code>
+    <sjisCode>62155</sjisCode>
+    <text>10</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31310</code>
+    <utf8Code>9362</utf8Code>
+    <sjisCode>62156</sjisCode>
+    <text>11</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31311</code>
+    <utf8Code>9363</utf8Code>
+    <sjisCode>62157</sjisCode>
+    <text>12</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[HV]</orig>
+    <code>31312</code>
+    <utf8Code>57592</utf8Code>
+    <sjisCode>62158</sjisCode>
+    <text>ＨＤＴＶ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[SD]</orig>
+    <code>31313</code>
+    <utf8Code>57593</utf8Code>
+    <sjisCode>62159</sjisCode>
+    <text>ＳＤＴＶ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[P]</orig>
+    <code>31314</code>
+    <utf8Code>57594</utf8Code>
+    <sjisCode>62160</sjisCode>
+    <text>プログレッシブ放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[W]</orig>
+    <code>31315</code>
+    <utf8Code>57595</utf8Code>
+    <sjisCode>62161</sjisCode>
+    <text>ワイド放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31316</code>
+    <utf8Code>57596</utf8Code>
+    <sjisCode>62162</sjisCode>
+    <text>マルチビューテレビ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[手]</orig>
+    <code>31317</code>
+    <utf8Code>57597</utf8Code>
+    <sjisCode>62163</sjisCode>
+    <text>手話通訳放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[字]</orig>
+    <code>31318</code>
+    <utf8Code>57598</utf8Code>
+    <sjisCode>62164</sjisCode>
+    <text>字幕放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[双]</orig>
+    <code>31319</code>
+    <utf8Code>57599</utf8Code>
+    <sjisCode>62165</sjisCode>
+    <text>双方向放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[デ]</orig>
+    <code>31320</code>
+    <utf8Code>57728</utf8Code>
+    <sjisCode>62166</sjisCode>
+    <text>番組連動データ放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[S]</orig>
+    <code>31321</code>
+    <utf8Code>57729</utf8Code>
+    <sjisCode>62167</sjisCode>
+    <text>ステレオ放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[二]</orig>
+    <code>31322</code>
+    <utf8Code>57730</utf8Code>
+    <sjisCode>62168</sjisCode>
+    <text>二ヶ国語放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[多]</orig>
+    <code>31323</code>
+    <utf8Code>57731</utf8Code>
+    <sjisCode>62169</sjisCode>
+    <text>音声多重放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[解]</orig>
+    <code>31324</code>
+    <utf8Code>57732</utf8Code>
+    <sjisCode>62170</sjisCode>
+    <text>音声解説</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[SS]</orig>
+    <code>31325</code>
+    <utf8Code>57733</utf8Code>
+    <sjisCode>62171</sjisCode>
+    <text>サラウンドステレオ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[B]</orig>
+    <code>31326</code>
+    <utf8Code>57734</utf8Code>
+    <sjisCode>62172</sjisCode>
+    <text>圧縮モードステレオ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[N]</orig>
+    <code>31327</code>
+    <utf8Code>57735</utf8Code>
+    <sjisCode>62173</sjisCode>
+    <text>ニュース</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31328</code>
+    <utf8Code>9632</utf8Code>
+    <sjisCode>62174</sjisCode>
+    <text>四角（黒）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31329</code>
+    <utf8Code>9679</utf8Code>
+    <sjisCode>62175</sjisCode>
+    <text>丸（黒）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31330</code>
+    <utf8Code>57738</utf8Code>
+    <sjisCode>62176</sjisCode>
+    <text>天気予報</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31331</code>
+    <utf8Code>57739</utf8Code>
+    <sjisCode>62177</sjisCode>
+    <text>交通情報</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31332</code>
+    <utf8Code>57740</utf8Code>
+    <sjisCode>62178</sjisCode>
+    <text>劇映画</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31333</code>
+    <utf8Code>57741</utf8Code>
+    <sjisCode>62179</sjisCode>
+    <text>無料放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31334</code>
+    <utf8Code>57742</utf8Code>
+    <sjisCode>62180</sjisCode>
+    <text>有料放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31335</code>
+    <utf8Code>57743</utf8Code>
+    <sjisCode>62181</sjisCode>
+    <text>パレンタルロック</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[前]</orig>
+    <code>31336</code>
+    <utf8Code>57744</utf8Code>
+    <sjisCode>62182</sjisCode>
+    <text>前編</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[後]</orig>
+    <code>31337</code>
+    <utf8Code>57745</utf8Code>
+    <sjisCode>62183</sjisCode>
+    <text>後編</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[再]</orig>
+    <code>31338</code>
+    <utf8Code>57746</utf8Code>
+    <sjisCode>62184</sjisCode>
+    <text>再放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[新]</orig>
+    <code>31339</code>
+    <utf8Code>57747</utf8Code>
+    <sjisCode>62185</sjisCode>
+    <text>新番組</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[初]</orig>
+    <code>31340</code>
+    <utf8Code>57748</utf8Code>
+    <sjisCode>62186</sjisCode>
+    <text>初回放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[終]</orig>
+    <code>31341</code>
+    <utf8Code>57749</utf8Code>
+    <sjisCode>62187</sjisCode>
+    <text>最終回</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig>[生]</orig>
+    <code>31342</code>
+    <utf8Code>57750</utf8Code>
+    <sjisCode>62188</sjisCode>
+    <text>生放送</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31343</code>
+    <utf8Code>57751</utf8Code>
+    <sjisCode>62189</sjisCode>
+    <text>通販</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31344</code>
+    <utf8Code>57752</utf8Code>
+    <sjisCode>62190</sjisCode>
+    <text>声優・声の出演</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31345</code>
+    <utf8Code>57753</utf8Code>
+    <sjisCode>62191</sjisCode>
+    <text>吹き替え</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31346</code>
+    <utf8Code>57754</utf8Code>
+    <sjisCode>62192</sjisCode>
+    <text>ペーパービュー</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31347</code>
+    <utf8Code>12953</utf8Code>
+    <sjisCode>62193</sjisCode>
+    <text>マル秘</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31348</code>
+    <utf8Code>57756</utf8Code>
+    <sjisCode>62194</sjisCode>
+    <text>〜ほか</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31521</code>
+    <utf8Code>57767</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>官公庁</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31522</code>
+    <utf8Code>57768</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>都道府県庁</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31523</code>
+    <utf8Code>9678</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>市役所</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31524</code>
+    <utf8Code>12295</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>町村役場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31525</code>
+    <utf8Code>10754</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>警察署</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31526</code>
+    <utf8Code>57772</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>派出所</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31527</code>
+    <utf8Code>12939</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>消防署</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31528</code>
+    <utf8Code>12306</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>郵便局</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31529</code>
+    <utf8Code>57775</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>病院</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31530</code>
+    <utf8Code>57776</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>学校</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31531</code>
+    <utf8Code>57777</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>幼稚園</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31532</code>
+    <utf8Code>57778</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>神社</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31533</code>
+    <utf8Code>21325</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>寺院</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31534</code>
+    <utf8Code>57780</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>教会</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31535</code>
+    <utf8Code>57781</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>城跡</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31536</code>
+    <utf8Code>8756</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>史跡</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31537</code>
+    <utf8Code>9832</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>温泉</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31538</code>
+    <utf8Code>57784</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>工場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31539</code>
+    <utf8Code>57785</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>発電所</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31540</code>
+    <utf8Code>57786</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>灯台</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31541</code>
+    <utf8Code>9875</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>港湾</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31542</code>
+    <utf8Code>9992</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>空港</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31543</code>
+    <utf8Code>9650</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>山</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31544</code>
+    <utf8Code>57790</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>海水浴場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31545</code>
+    <utf8Code>57791</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>公園</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31546</code>
+    <utf8Code>57792</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>ゴルフ場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31547</code>
+    <utf8Code>57793</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>フェリー発着所</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31548</code>
+    <utf8Code>57794</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>マリーナ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31549</code>
+    <utf8Code>57795</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>ホテル</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31550</code>
+    <utf8Code>9401</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>デパート</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31551</code>
+    <utf8Code>9416</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>駅</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31552</code>
+    <utf8Code>57798</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>交差点</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31553</code>
+    <utf8Code>57799</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>駐車場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31554</code>
+    <utf8Code>57800</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>インターチェンジ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31555</code>
+    <utf8Code>57801</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>サービスエリア</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31556</code>
+    <utf8Code>57802</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>パーキングエリア</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31557</code>
+    <utf8Code>57803</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>ジャンクション</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31558</code>
+    <utf8Code>57804</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>スキー場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31559</code>
+    <utf8Code>57805</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>アイススケート場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31560</code>
+    <utf8Code>57806</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>体育館</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31561</code>
+    <utf8Code>57807</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>キャンプ場</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31562</code>
+    <utf8Code>57808</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>レジャーランド</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31563</code>
+    <utf8Code>9742</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>電話会社</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31564</code>
+    <utf8Code>57810</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>銀行</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31565</code>
+    <utf8Code>57811</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>墓地</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31566</code>
+    <utf8Code>57812</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>ガソリンスタンド</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31567</code>
+    <utf8Code>57813</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>ドライブイン</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31568</code>
+    <utf8Code>57814</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>文化施設</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31569</code>
+    <utf8Code>57815</utf8Code>
+    <sjisCode>0</sjisCode>
+    <text>自衛隊</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31777</code>
+    <utf8Code>10145</utf8Code>
+    <sjisCode>62367</sjisCode>
+    <text>右矢印（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31778</code>
+    <utf8Code>11013</utf8Code>
+    <sjisCode>62368</sjisCode>
+    <text>左矢印（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31779</code>
+    <utf8Code>11014</utf8Code>
+    <sjisCode>62369</sjisCode>
+    <text>上矢印（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31780</code>
+    <utf8Code>11015</utf8Code>
+    <sjisCode>62370</sjisCode>
+    <text>下矢印（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31781</code>
+    <utf8Code>11053</utf8Code>
+    <sjisCode>62371</sjisCode>
+    <text>縦楕円（白抜き）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31782</code>
+    <utf8Code>11054</utf8Code>
+    <sjisCode>62372</sjisCode>
+    <text>縦楕円（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31783</code>
+    <utf8Code>24180</utf8Code>
+    <sjisCode>62373</sjisCode>
+    <text>年</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31784</code>
+    <utf8Code>26376</utf8Code>
+    <sjisCode>62374</sjisCode>
+    <text>月</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31785</code>
+    <utf8Code>26085</utf8Code>
+    <sjisCode>62375</sjisCode>
+    <text>日</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31786</code>
+    <utf8Code>20870</utf8Code>
+    <sjisCode>62376</sjisCode>
+    <text>エン</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31787</code>
+    <utf8Code>13217</utf8Code>
+    <sjisCode>62377</sjisCode>
+    <text>平方メートル（㎡）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31788</code>
+    <utf8Code>13221</utf8Code>
+    <sjisCode>62378</sjisCode>
+    <text>立方メートル（?）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31789</code>
+    <utf8Code>13213</utf8Code>
+    <sjisCode>62379</sjisCode>
+    <text>センチメートル（㎝）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31790</code>
+    <utf8Code>13216</utf8Code>
+    <sjisCode>62380</sjisCode>
+    <text>平方センチメートル</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31791</code>
+    <utf8Code>13220</utf8Code>
+    <sjisCode>62381</sjisCode>
+    <text>立方センチメートル</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31792</code>
+    <utf8Code>57999</utf8Code>
+    <sjisCode>62382</sjisCode>
+    <text>0.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31793</code>
+    <utf8Code>9352</utf8Code>
+    <sjisCode>62383</sjisCode>
+    <text>1.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31794</code>
+    <utf8Code>9353</utf8Code>
+    <sjisCode>62384</sjisCode>
+    <text>2.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31795</code>
+    <utf8Code>9354</utf8Code>
+    <sjisCode>62385</sjisCode>
+    <text>3.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31796</code>
+    <utf8Code>9355</utf8Code>
+    <sjisCode>62386</sjisCode>
+    <text>4.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31797</code>
+    <utf8Code>9356</utf8Code>
+    <sjisCode>62387</sjisCode>
+    <text>5.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31798</code>
+    <utf8Code>9357</utf8Code>
+    <sjisCode>62388</sjisCode>
+    <text>6.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31799</code>
+    <utf8Code>9358</utf8Code>
+    <sjisCode>62389</sjisCode>
+    <text>7.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31800</code>
+    <utf8Code>9359</utf8Code>
+    <sjisCode>62390</sjisCode>
+    <text>8.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31801</code>
+    <utf8Code>9360</utf8Code>
+    <sjisCode>62391</sjisCode>
+    <text>9.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31802</code>
+    <utf8Code>27663</utf8Code>
+    <sjisCode>62392</sjisCode>
+    <text>氏</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31803</code>
+    <utf8Code>21103</utf8Code>
+    <sjisCode>62393</sjisCode>
+    <text>副</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31804</code>
+    <utf8Code>20803</utf8Code>
+    <sjisCode>62394</sjisCode>
+    <text>元</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31805</code>
+    <utf8Code>25925</utf8Code>
+    <sjisCode>62395</sjisCode>
+    <text>故</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31806</code>
+    <utf8Code>21069</utf8Code>
+    <sjisCode>62396</sjisCode>
+    <text>前</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31807</code>
+    <utf8Code>26032</utf8Code>
+    <sjisCode>62397</sjisCode>
+    <text>新</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31808</code>
+    <utf8Code>58006</utf8Code>
+    <sjisCode>62398</sjisCode>
+    <text>0,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31809</code>
+    <utf8Code>58007</utf8Code>
+    <sjisCode>62399</sjisCode>
+    <text>1,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31810</code>
+    <utf8Code>58008</utf8Code>
+    <sjisCode>62400</sjisCode>
+    <text>2,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31811</code>
+    <utf8Code>58009</utf8Code>
+    <sjisCode>62401</sjisCode>
+    <text>3,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31812</code>
+    <utf8Code>58010</utf8Code>
+    <sjisCode>62402</sjisCode>
+    <text>4,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31813</code>
+    <utf8Code>58011</utf8Code>
+    <sjisCode>62403</sjisCode>
+    <text>5,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31814</code>
+    <utf8Code>58012</utf8Code>
+    <sjisCode>62404</sjisCode>
+    <text>6,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31815</code>
+    <utf8Code>58013</utf8Code>
+    <sjisCode>62405</sjisCode>
+    <text>7,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31816</code>
+    <utf8Code>58014</utf8Code>
+    <sjisCode>62406</sjisCode>
+    <text>8,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31817</code>
+    <utf8Code>58015</utf8Code>
+    <sjisCode>62407</sjisCode>
+    <text>9,</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31818</code>
+    <utf8Code>12851</utf8Code>
+    <sjisCode>62408</sjisCode>
+    <text>〔社〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31819</code>
+    <utf8Code>12854</utf8Code>
+    <sjisCode>62409</sjisCode>
+    <text>〔財〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31820</code>
+    <utf8Code>12850</utf8Code>
+    <sjisCode>62410</sjisCode>
+    <text>〔有〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31821</code>
+    <utf8Code>12849</utf8Code>
+    <sjisCode>62411</sjisCode>
+    <text>〔株〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31822</code>
+    <utf8Code>12857</utf8Code>
+    <sjisCode>62412</sjisCode>
+    <text>〔代〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31823</code>
+    <utf8Code>58016</utf8Code>
+    <sjisCode>62413</sjisCode>
+    <text>問+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31824</code>
+    <utf8Code>9654</utf8Code>
+    <sjisCode>62414</sjisCode>
+    <text>右向き三角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31825</code>
+    <utf8Code>9664</utf8Code>
+    <sjisCode>62415</sjisCode>
+    <text>左向き三角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31826</code>
+    <utf8Code>12310</utf8Code>
+    <sjisCode>62416</sjisCode>
+    <text>すみ付きカッコ【</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31827</code>
+    <utf8Code>12311</utf8Code>
+    <sjisCode>62417</sjisCode>
+    <text>すみ付きカッコ】</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31828</code>
+    <utf8Code>58017</utf8Code>
+    <sjisCode>62418</sjisCode>
+    <text>四角ダイヤ+点</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31829</code>
+    <utf8Code>178</utf8Code>
+    <sjisCode>62419</sjisCode>
+    <text>二乗記号</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31830</code>
+    <utf8Code>179</utf8Code>
+    <sjisCode>62420</sjisCode>
+    <text>三乗記号</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31831</code>
+    <utf8Code>58020</utf8Code>
+    <sjisCode>62421</sjisCode>
+    <text>CD+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31832</code>
+    <utf8Code>58021</utf8Code>
+    <sjisCode>62422</sjisCode>
+    <text>(vn)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31833</code>
+    <utf8Code>58022</utf8Code>
+    <sjisCode>62423</sjisCode>
+    <text>(ob)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31834</code>
+    <utf8Code>58023</utf8Code>
+    <sjisCode>62424</sjisCode>
+    <text>(cb)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31835</code>
+    <utf8Code>58024</utf8Code>
+    <sjisCode>62425</sjisCode>
+    <text>(ce</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31836</code>
+    <utf8Code>58025</utf8Code>
+    <sjisCode>62426</sjisCode>
+    <text>mb)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31837</code>
+    <utf8Code>58026</utf8Code>
+    <sjisCode>62427</sjisCode>
+    <text>(hp)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31838</code>
+    <utf8Code>58027</utf8Code>
+    <sjisCode>62428</sjisCode>
+    <text>（ｂｒ）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31839</code>
+    <utf8Code>58028</utf8Code>
+    <sjisCode>62429</sjisCode>
+    <text>(p)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31840</code>
+    <utf8Code>58029</utf8Code>
+    <sjisCode>62430</sjisCode>
+    <text>(s)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31841</code>
+    <utf8Code>58030</utf8Code>
+    <sjisCode>62431</sjisCode>
+    <text>(ms)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31842</code>
+    <utf8Code>58031</utf8Code>
+    <sjisCode>62432</sjisCode>
+    <text>（ｔ）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31843</code>
+    <utf8Code>58032</utf8Code>
+    <sjisCode>62433</sjisCode>
+    <text>(bs)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31844</code>
+    <utf8Code>58033</utf8Code>
+    <sjisCode>62434</sjisCode>
+    <text>（ｂ）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31845</code>
+    <utf8Code>58034</utf8Code>
+    <sjisCode>62435</sjisCode>
+    <text>(tb)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31846</code>
+    <utf8Code>58035</utf8Code>
+    <sjisCode>62436</sjisCode>
+    <text>（ｔｐ）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31847</code>
+    <utf8Code>58036</utf8Code>
+    <sjisCode>62437</sjisCode>
+    <text>（ｄｓ）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31848</code>
+    <utf8Code>58037</utf8Code>
+    <sjisCode>62438</sjisCode>
+    <text>(ag)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31849</code>
+    <utf8Code>58038</utf8Code>
+    <sjisCode>62439</sjisCode>
+    <text>(eg)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31850</code>
+    <utf8Code>58039</utf8Code>
+    <sjisCode>62440</sjisCode>
+    <text>(vo)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31851</code>
+    <utf8Code>58040</utf8Code>
+    <sjisCode>62441</sjisCode>
+    <text>(fl)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31852</code>
+    <utf8Code>58041</utf8Code>
+    <sjisCode>62442</sjisCode>
+    <text>(ke</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31853</code>
+    <utf8Code>58042</utf8Code>
+    <sjisCode>62443</sjisCode>
+    <text>y)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31854</code>
+    <utf8Code>58043</utf8Code>
+    <sjisCode>62444</sjisCode>
+    <text>(sa</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31855</code>
+    <utf8Code>58044</utf8Code>
+    <sjisCode>62445</sjisCode>
+    <text>x)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31856</code>
+    <utf8Code>58045</utf8Code>
+    <sjisCode>62446</sjisCode>
+    <text>(sy</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31857</code>
+    <utf8Code>58046</utf8Code>
+    <sjisCode>62447</sjisCode>
+    <text>n)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31858</code>
+    <utf8Code>58047</utf8Code>
+    <sjisCode>62448</sjisCode>
+    <text>(or</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31859</code>
+    <utf8Code>58048</utf8Code>
+    <sjisCode>62449</sjisCode>
+    <text>ｇ）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31860</code>
+    <utf8Code>58049</utf8Code>
+    <sjisCode>62450</sjisCode>
+    <text>(pe</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31861</code>
+    <utf8Code>58050</utf8Code>
+    <sjisCode>62451</sjisCode>
+    <text>r)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31862</code>
+    <utf8Code>58279</utf8Code>
+    <sjisCode>62452</sjisCode>
+    <text>R+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31863</code>
+    <utf8Code>58280</utf8Code>
+    <sjisCode>62453</sjisCode>
+    <text>C+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31864</code>
+    <utf8Code>58051</utf8Code>
+    <sjisCode>62454</sjisCode>
+    <text>箏+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31865</code>
+    <utf8Code>58052</utf8Code>
+    <sjisCode>62455</sjisCode>
+    <text>DJ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31866</code>
+    <utf8Code>58053</utf8Code>
+    <sjisCode>62456</sjisCode>
+    <text>演+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>31867</code>
+    <utf8Code>8507</utf8Code>
+    <sjisCode>62457</sjisCode>
+    <text>Fax</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32033</code>
+    <utf8Code>12842</utf8Code>
+    <sjisCode>62528</sjisCode>
+    <text>(月)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32034</code>
+    <utf8Code>12843</utf8Code>
+    <sjisCode>62529</sjisCode>
+    <text>(火)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32035</code>
+    <utf8Code>12844</utf8Code>
+    <sjisCode>62530</sjisCode>
+    <text>(水)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32036</code>
+    <utf8Code>12845</utf8Code>
+    <sjisCode>62531</sjisCode>
+    <text>(木)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32037</code>
+    <utf8Code>12846</utf8Code>
+    <sjisCode>62532</sjisCode>
+    <text>(金)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32038</code>
+    <utf8Code>12847</utf8Code>
+    <sjisCode>62533</sjisCode>
+    <text>(土)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32039</code>
+    <utf8Code>8752</utf8Code>
+    <sjisCode>62534</sjisCode>
+    <text>(日)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32040</code>
+    <utf8Code>12855</utf8Code>
+    <sjisCode>62535</sjisCode>
+    <text>(祝)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32041</code>
+    <utf8Code>13182</utf8Code>
+    <sjisCode>62536</sjisCode>
+    <text>明治</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32042</code>
+    <utf8Code>13181</utf8Code>
+    <sjisCode>62537</sjisCode>
+    <text>大正</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32043</code>
+    <utf8Code>13180</utf8Code>
+    <sjisCode>62538</sjisCode>
+    <text>昭和</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32044</code>
+    <utf8Code>13179</utf8Code>
+    <sjisCode>62539</sjisCode>
+    <text>平成</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32045</code>
+    <utf8Code>8470</utf8Code>
+    <sjisCode>62540</sjisCode>
+    <text>No.</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32046</code>
+    <utf8Code>8481</utf8Code>
+    <sjisCode>62541</sjisCode>
+    <text>Tel</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32047</code>
+    <utf8Code>12342</utf8Code>
+    <sjisCode>62542</sjisCode>
+    <text>郵便記号</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32048</code>
+    <utf8Code>58060</utf8Code>
+    <sjisCode>62543</sjisCode>
+    <text>野球の球</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32049</code>
+    <utf8Code>3628</utf8Code>
+    <sjisCode>62544</sjisCode>
+    <text>〔本〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32050</code>
+    <utf8Code>3628</utf8Code>
+    <sjisCode>62545</sjisCode>
+    <text>〔三〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32051</code>
+    <utf8Code>3628</utf8Code>
+    <sjisCode>62546</sjisCode>
+    <text>〔二〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32052</code>
+    <utf8Code>58064</utf8Code>
+    <sjisCode>62547</sjisCode>
+    <text>〔安〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32053</code>
+    <utf8Code>58065</utf8Code>
+    <sjisCode>62548</sjisCode>
+    <text>〔点〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32054</code>
+    <utf8Code>58066</utf8Code>
+    <sjisCode>62549</sjisCode>
+    <text>〔打〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32055</code>
+    <utf8Code>58067</utf8Code>
+    <sjisCode>62550</sjisCode>
+    <text>〔盗〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32056</code>
+    <utf8Code>58068</utf8Code>
+    <sjisCode>62551</sjisCode>
+    <text>〔勝〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32057</code>
+    <utf8Code>58069</utf8Code>
+    <sjisCode>62552</sjisCode>
+    <text>〔敗〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32058</code>
+    <utf8Code>58070</utf8Code>
+    <sjisCode>62553</sjisCode>
+    <text>〔S〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32059</code>
+    <utf8Code>58071</utf8Code>
+    <sjisCode>62554</sjisCode>
+    <text>投+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32060</code>
+    <utf8Code>58072</utf8Code>
+    <sjisCode>62555</sjisCode>
+    <text>捕+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32061</code>
+    <utf8Code>58073</utf8Code>
+    <sjisCode>62556</sjisCode>
+    <text>一+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32062</code>
+    <utf8Code>3629</utf8Code>
+    <sjisCode>62557</sjisCode>
+    <text>二+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32063</code>
+    <utf8Code>3629</utf8Code>
+    <sjisCode>62558</sjisCode>
+    <text>三+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32064</code>
+    <utf8Code>3629</utf8Code>
+    <sjisCode>62559</sjisCode>
+    <text>遊+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32065</code>
+    <utf8Code>3629</utf8Code>
+    <sjisCode>62560</sjisCode>
+    <text>左+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32066</code>
+    <utf8Code>3629</utf8Code>
+    <sjisCode>62561</sjisCode>
+    <text>中+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32067</code>
+    <utf8Code>3629</utf8Code>
+    <sjisCode>62562</sjisCode>
+    <text>右+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32068</code>
+    <utf8Code>58080</utf8Code>
+    <sjisCode>62563</sjisCode>
+    <text>指+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32069</code>
+    <utf8Code>58081</utf8Code>
+    <sjisCode>62564</sjisCode>
+    <text>走+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32070</code>
+    <utf8Code>58082</utf8Code>
+    <sjisCode>62565</sjisCode>
+    <text>打+四角</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32071</code>
+    <utf8Code>8467</utf8Code>
+    <sjisCode>62566</sjisCode>
+    <text>リットル（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32072</code>
+    <utf8Code>13199</utf8Code>
+    <sjisCode>62567</sjisCode>
+    <text>キログラム（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32073</code>
+    <utf8Code>13200</utf8Code>
+    <sjisCode>62568</sjisCode>
+    <text>ヘルツ（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32074</code>
+    <utf8Code>13258</utf8Code>
+    <sjisCode>62569</sjisCode>
+    <text>ヘクタール（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32075</code>
+    <utf8Code>13214</utf8Code>
+    <sjisCode>62570</sjisCode>
+    <text>キロメートル（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32076</code>
+    <utf8Code>13218</utf8Code>
+    <sjisCode>62571</sjisCode>
+    <text>平方キロメートル（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32077</code>
+    <utf8Code>13169</utf8Code>
+    <sjisCode>62572</sjisCode>
+    <text>ヘクトパスカル（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32080</code>
+    <utf8Code>189</utf8Code>
+    <sjisCode>62575</sjisCode>
+    <text>1/2</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32081</code>
+    <utf8Code>58085</utf8Code>
+    <sjisCode>62576</sjisCode>
+    <text>0/3</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32082</code>
+    <utf8Code>8531</utf8Code>
+    <sjisCode>62577</sjisCode>
+    <text>1/3</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32083</code>
+    <utf8Code>8532</utf8Code>
+    <sjisCode>62578</sjisCode>
+    <text>2/3</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32084</code>
+    <utf8Code>188</utf8Code>
+    <sjisCode>62579</sjisCode>
+    <text>1/4</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32085</code>
+    <utf8Code>190</utf8Code>
+    <sjisCode>62580</sjisCode>
+    <text>3/4</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32086</code>
+    <utf8Code>8533</utf8Code>
+    <sjisCode>62581</sjisCode>
+    <text>1/5</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32087</code>
+    <utf8Code>8534</utf8Code>
+    <sjisCode>62582</sjisCode>
+    <text>2/5</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32088</code>
+    <utf8Code>8535</utf8Code>
+    <sjisCode>62583</sjisCode>
+    <text>3/5</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32089</code>
+    <utf8Code>8536</utf8Code>
+    <sjisCode>62584</sjisCode>
+    <text>4/5</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32090</code>
+    <utf8Code>8537</utf8Code>
+    <sjisCode>62585</sjisCode>
+    <text>1/6</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32091</code>
+    <utf8Code>8538</utf8Code>
+    <sjisCode>62586</sjisCode>
+    <text>5/6</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32092</code>
+    <utf8Code>58086</utf8Code>
+    <sjisCode>62587</sjisCode>
+    <text>1/7</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32093</code>
+    <utf8Code>8539</utf8Code>
+    <sjisCode>62588</sjisCode>
+    <text>1/8</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32094</code>
+    <utf8Code>58087</utf8Code>
+    <sjisCode>62589</sjisCode>
+    <text>1/9</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32095</code>
+    <utf8Code>58088</utf8Code>
+    <sjisCode>62590</sjisCode>
+    <text>1/10</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32096</code>
+    <utf8Code>9728</utf8Code>
+    <sjisCode>62592</sjisCode>
+    <text>晴れ（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32097</code>
+    <utf8Code>9729</utf8Code>
+    <sjisCode>62593</sjisCode>
+    <text>曇り（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32098</code>
+    <utf8Code>9730</utf8Code>
+    <sjisCode>62594</sjisCode>
+    <text>傘（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32099</code>
+    <utf8Code>9731</utf8Code>
+    <sjisCode>62595</sjisCode>
+    <text>雪だるま（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32100</code>
+    <utf8Code>9750</utf8Code>
+    <sjisCode>62596</sjisCode>
+    <text>上向き〔白抜き〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32101</code>
+    <utf8Code>9751</utf8Code>
+    <sjisCode>62597</sjisCode>
+    <text>上向き（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32102</code>
+    <utf8Code>58092</utf8Code>
+    <sjisCode>62598</sjisCode>
+    <text>下向き〔白抜き〕</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32103</code>
+    <utf8Code>58093</utf8Code>
+    <sjisCode>62599</sjisCode>
+    <text>下向き（黒塗り）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32104</code>
+    <utf8Code>9830</utf8Code>
+    <sjisCode>62600</sjisCode>
+    <text>ダイヤ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32105</code>
+    <utf8Code>9829</utf8Code>
+    <sjisCode>62601</sjisCode>
+    <text>ハート</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32106</code>
+    <utf8Code>9827</utf8Code>
+    <sjisCode>62602</sjisCode>
+    <text>クローバー</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32107</code>
+    <utf8Code>9824</utf8Code>
+    <sjisCode>62603</sjisCode>
+    <text>スペード</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32108</code>
+    <utf8Code>58094</utf8Code>
+    <sjisCode>62604</sjisCode>
+    <text>四角+ダイヤ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32109</code>
+    <utf8Code>58095</utf8Code>
+    <sjisCode>62605</sjisCode>
+    <text>丸+点</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32110</code>
+    <utf8Code>8252</utf8Code>
+    <sjisCode>62606</sjisCode>
+    <text>!!</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32111</code>
+    <utf8Code>8265</utf8Code>
+    <sjisCode>62607</sjisCode>
+    <text>!?</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32112</code>
+    <utf8Code>58097</utf8Code>
+    <sjisCode>62608</sjisCode>
+    <text>晴れ+曇り（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32113</code>
+    <utf8Code>9748</utf8Code>
+    <sjisCode>62609</sjisCode>
+    <text>傘+雨（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32114</code>
+    <utf8Code>58099</utf8Code>
+    <sjisCode>62610</sjisCode>
+    <text>雨（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32115</code>
+    <utf8Code>9731</utf8Code>
+    <sjisCode>62611</sjisCode>
+    <text>雪だるま+雪（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32116</code>
+    <utf8Code>58101</utf8Code>
+    <sjisCode>62612</sjisCode>
+    <text>雪だるま[塗]+雪（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32117</code>
+    <utf8Code>9735</utf8Code>
+    <sjisCode>62613</sjisCode>
+    <text>雷（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32118</code>
+    <utf8Code>9736</utf8Code>
+    <sjisCode>62614</sjisCode>
+    <text>雷+雨+雲（記号）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32120</code>
+    <utf8Code>58105</utf8Code>
+    <sjisCode>62616</sjisCode>
+    <text>左ひげ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32121</code>
+    <utf8Code>58106</utf8Code>
+    <sjisCode>62617</sjisCode>
+    <text>右ひげ</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32122</code>
+    <utf8Code>9836</utf8Code>
+    <sjisCode>62618</sjisCode>
+    <text>音符</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32123</code>
+    <utf8Code>9742</utf8Code>
+    <sjisCode>62619</sjisCode>
+    <text>電話</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32289</code>
+    <utf8Code>8544</utf8Code>
+    <sjisCode>62623</sjisCode>
+    <text>Ⅰ(ローマ数字1）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32290</code>
+    <utf8Code>8545</utf8Code>
+    <sjisCode>62624</sjisCode>
+    <text>Ⅱ(ローマ数字2）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32291</code>
+    <utf8Code>8546</utf8Code>
+    <sjisCode>62625</sjisCode>
+    <text>Ⅲ(ローマ数字3）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32292</code>
+    <utf8Code>8547</utf8Code>
+    <sjisCode>62626</sjisCode>
+    <text>Ⅳ(ローマ数字4）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32293</code>
+    <utf8Code>8548</utf8Code>
+    <sjisCode>62627</sjisCode>
+    <text>Ⅴ(ローマ数字5）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32294</code>
+    <utf8Code>8549</utf8Code>
+    <sjisCode>62628</sjisCode>
+    <text>Ⅵ(ローマ数字6）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32295</code>
+    <utf8Code>8550</utf8Code>
+    <sjisCode>62629</sjisCode>
+    <text>Ⅶ(ローマ数字7）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32296</code>
+    <utf8Code>8551</utf8Code>
+    <sjisCode>62630</sjisCode>
+    <text>Ⅷ(ローマ数字8）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32297</code>
+    <utf8Code>8552</utf8Code>
+    <sjisCode>62631</sjisCode>
+    <text>Ⅸ(ローマ数字9）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32298</code>
+    <utf8Code>8553</utf8Code>
+    <sjisCode>62632</sjisCode>
+    <text>Ⅹ(ローマ数字10）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32299</code>
+    <utf8Code>8554</utf8Code>
+    <sjisCode>62633</sjisCode>
+    <text>ローマ数字11</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32300</code>
+    <utf8Code>8555</utf8Code>
+    <sjisCode>62634</sjisCode>
+    <text>ローマ数字12</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32301</code>
+    <utf8Code>9328</utf8Code>
+    <sjisCode>62635</sjisCode>
+    <text>17+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32302</code>
+    <utf8Code>9329</utf8Code>
+    <sjisCode>62636</sjisCode>
+    <text>18+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32303</code>
+    <utf8Code>9330</utf8Code>
+    <sjisCode>62637</sjisCode>
+    <text>19+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32304</code>
+    <utf8Code>9331</utf8Code>
+    <sjisCode>62638</sjisCode>
+    <text>20+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32305</code>
+    <utf8Code>9332</utf8Code>
+    <sjisCode>62639</sjisCode>
+    <text>(1)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32306</code>
+    <utf8Code>9333</utf8Code>
+    <sjisCode>62640</sjisCode>
+    <text>(2)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32307</code>
+    <utf8Code>9334</utf8Code>
+    <sjisCode>62641</sjisCode>
+    <text>(3)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32308</code>
+    <utf8Code>9335</utf8Code>
+    <sjisCode>62642</sjisCode>
+    <text>(4)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32309</code>
+    <utf8Code>9336</utf8Code>
+    <sjisCode>62643</sjisCode>
+    <text>(5)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32310</code>
+    <utf8Code>9337</utf8Code>
+    <sjisCode>62644</sjisCode>
+    <text>(6)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32311</code>
+    <utf8Code>9338</utf8Code>
+    <sjisCode>62645</sjisCode>
+    <text>(7)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32312</code>
+    <utf8Code>9339</utf8Code>
+    <sjisCode>62646</sjisCode>
+    <text>(8)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32313</code>
+    <utf8Code>9340</utf8Code>
+    <sjisCode>62647</sjisCode>
+    <text>(9)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32314</code>
+    <utf8Code>9341</utf8Code>
+    <sjisCode>62648</sjisCode>
+    <text>(10)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32315</code>
+    <utf8Code>9342</utf8Code>
+    <sjisCode>62649</sjisCode>
+    <text>(11)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32316</code>
+    <utf8Code>9343</utf8Code>
+    <sjisCode>62650</sjisCode>
+    <text>(12)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32317</code>
+    <utf8Code>12881</utf8Code>
+    <sjisCode>62651</sjisCode>
+    <text>21+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32318</code>
+    <utf8Code>12882</utf8Code>
+    <sjisCode>62652</sjisCode>
+    <text>22+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32319</code>
+    <utf8Code>12883</utf8Code>
+    <sjisCode>62653</sjisCode>
+    <text>23+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32320</code>
+    <utf8Code>12884</utf8Code>
+    <sjisCode>62654</sjisCode>
+    <text>24+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32321</code>
+    <utf8Code>58243</utf8Code>
+    <sjisCode>62655</sjisCode>
+    <text>(A)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32322</code>
+    <utf8Code>58244</utf8Code>
+    <sjisCode>62656</sjisCode>
+    <text>(B)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32323</code>
+    <utf8Code>58245</utf8Code>
+    <sjisCode>62657</sjisCode>
+    <text>（C）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32324</code>
+    <utf8Code>58246</utf8Code>
+    <sjisCode>62658</sjisCode>
+    <text>（D）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32325</code>
+    <utf8Code>58247</utf8Code>
+    <sjisCode>62659</sjisCode>
+    <text>（E）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32326</code>
+    <utf8Code>58248</utf8Code>
+    <sjisCode>62660</sjisCode>
+    <text>（F）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32327</code>
+    <utf8Code>58249</utf8Code>
+    <sjisCode>62661</sjisCode>
+    <text>（G）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32328</code>
+    <utf8Code>58250</utf8Code>
+    <sjisCode>62662</sjisCode>
+    <text>（H）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32329</code>
+    <utf8Code>58251</utf8Code>
+    <sjisCode>62663</sjisCode>
+    <text>（I）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32330</code>
+    <utf8Code>58252</utf8Code>
+    <sjisCode>62664</sjisCode>
+    <text>（J）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32331</code>
+    <utf8Code>58253</utf8Code>
+    <sjisCode>62665</sjisCode>
+    <text>（K）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32332</code>
+    <utf8Code>58254</utf8Code>
+    <sjisCode>62666</sjisCode>
+    <text>（L）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32333</code>
+    <utf8Code>58255</utf8Code>
+    <sjisCode>62667</sjisCode>
+    <text>（M）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32334</code>
+    <utf8Code>58256</utf8Code>
+    <sjisCode>62668</sjisCode>
+    <text>（N）</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32335</code>
+    <utf8Code>58257</utf8Code>
+    <sjisCode>62669</sjisCode>
+    <text>(O)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32336</code>
+    <utf8Code>58258</utf8Code>
+    <sjisCode>62670</sjisCode>
+    <text>(P)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32337</code>
+    <utf8Code>58259</utf8Code>
+    <sjisCode>62671</sjisCode>
+    <text>(Q)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32338</code>
+    <utf8Code>58260</utf8Code>
+    <sjisCode>62672</sjisCode>
+    <text>(R)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32339</code>
+    <utf8Code>58261</utf8Code>
+    <sjisCode>62673</sjisCode>
+    <text>(S)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32340</code>
+    <utf8Code>58262</utf8Code>
+    <sjisCode>62674</sjisCode>
+    <text>(T)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32341</code>
+    <utf8Code>58263</utf8Code>
+    <sjisCode>62675</sjisCode>
+    <text>(U)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32342</code>
+    <utf8Code>58264</utf8Code>
+    <sjisCode>62676</sjisCode>
+    <text>(V)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32343</code>
+    <utf8Code>58265</utf8Code>
+    <sjisCode>62677</sjisCode>
+    <text>(W)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32344</code>
+    <utf8Code>58266</utf8Code>
+    <sjisCode>62678</sjisCode>
+    <text>(X)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32345</code>
+    <utf8Code>58267</utf8Code>
+    <sjisCode>62679</sjisCode>
+    <text>(Y)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32346</code>
+    <utf8Code>58268</utf8Code>
+    <sjisCode>62680</sjisCode>
+    <text>(Z)</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32347</code>
+    <utf8Code>12885</utf8Code>
+    <sjisCode>62681</sjisCode>
+    <text>25+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32348</code>
+    <utf8Code>12886</utf8Code>
+    <sjisCode>62682</sjisCode>
+    <text>26+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32349</code>
+    <utf8Code>12887</utf8Code>
+    <sjisCode>62683</sjisCode>
+    <text>27+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32350</code>
+    <utf8Code>12888</utf8Code>
+    <sjisCode>62684</sjisCode>
+    <text>28+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32351</code>
+    <utf8Code>12889</utf8Code>
+    <sjisCode>62685</sjisCode>
+    <text>29+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32352</code>
+    <utf8Code>12890</utf8Code>
+    <sjisCode>62686</sjisCode>
+    <text>30+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32353</code>
+    <utf8Code>9312</utf8Code>
+    <sjisCode>62687</sjisCode>
+    <text>1+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32354</code>
+    <utf8Code>9313</utf8Code>
+    <sjisCode>62688</sjisCode>
+    <text>2+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32355</code>
+    <utf8Code>9314</utf8Code>
+    <sjisCode>62689</sjisCode>
+    <text>3+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32356</code>
+    <utf8Code>9315</utf8Code>
+    <sjisCode>62690</sjisCode>
+    <text>4+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32357</code>
+    <utf8Code>9316</utf8Code>
+    <sjisCode>62691</sjisCode>
+    <text>5+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32358</code>
+    <utf8Code>9317</utf8Code>
+    <sjisCode>62692</sjisCode>
+    <text>6+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32359</code>
+    <utf8Code>9318</utf8Code>
+    <sjisCode>62693</sjisCode>
+    <text>7+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32360</code>
+    <utf8Code>9319</utf8Code>
+    <sjisCode>62694</sjisCode>
+    <text>8+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32361</code>
+    <utf8Code>9320</utf8Code>
+    <sjisCode>62695</sjisCode>
+    <text>9+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32362</code>
+    <utf8Code>9321</utf8Code>
+    <sjisCode>62696</sjisCode>
+    <text>10+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32363</code>
+    <utf8Code>9322</utf8Code>
+    <sjisCode>62697</sjisCode>
+    <text>11+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32364</code>
+    <utf8Code>9323</utf8Code>
+    <sjisCode>62698</sjisCode>
+    <text>12+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32365</code>
+    <utf8Code>9324</utf8Code>
+    <sjisCode>62699</sjisCode>
+    <text>13+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32366</code>
+    <utf8Code>9325</utf8Code>
+    <sjisCode>62700</sjisCode>
+    <text>14+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32367</code>
+    <utf8Code>9326</utf8Code>
+    <sjisCode>62701</sjisCode>
+    <text>15+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32368</code>
+    <utf8Code>9327</utf8Code>
+    <sjisCode>62702</sjisCode>
+    <text>16+丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32369</code>
+    <utf8Code>10122</utf8Code>
+    <sjisCode>62703</sjisCode>
+    <text>1+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32370</code>
+    <utf8Code>10123</utf8Code>
+    <sjisCode>62704</sjisCode>
+    <text>2+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32371</code>
+    <utf8Code>10124</utf8Code>
+    <sjisCode>62705</sjisCode>
+    <text>3+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32372</code>
+    <utf8Code>10125</utf8Code>
+    <sjisCode>62706</sjisCode>
+    <text>4+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32373</code>
+    <utf8Code>10126</utf8Code>
+    <sjisCode>62707</sjisCode>
+    <text>5+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32374</code>
+    <utf8Code>10127</utf8Code>
+    <sjisCode>62708</sjisCode>
+    <text>6+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32375</code>
+    <utf8Code>10128</utf8Code>
+    <sjisCode>62709</sjisCode>
+    <text>7+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32376</code>
+    <utf8Code>10129</utf8Code>
+    <sjisCode>62710</sjisCode>
+    <text>8+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32377</code>
+    <utf8Code>10130</utf8Code>
+    <sjisCode>62711</sjisCode>
+    <text>9+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32378</code>
+    <utf8Code>10131</utf8Code>
+    <sjisCode>62712</sjisCode>
+    <text>10+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32379</code>
+    <utf8Code>9451</utf8Code>
+    <sjisCode>62713</sjisCode>
+    <text>11+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32380</code>
+    <utf8Code>9452</utf8Code>
+    <sjisCode>62714</sjisCode>
+    <text>12+黒丸</text>
+  </structExchangeTable>
+  <structExchangeTable>
+    <orig />
+    <code>32381</code>
+    <utf8Code>12891</utf8Code>
+    <sjisCode>62715</sjisCode>
+    <text>31+丸</text>
+  </structExchangeTable>
+</ArrayOfStructExchangeTable>

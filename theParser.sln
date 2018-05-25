@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theParser", "theParser\theParser.csproj", "{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTimerClass", "MTimerClass\MTimerClass.csproj", "{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "theParserSetup", "theParserSetup\theParserSetup.isproj", "{C592361D-CCD1-4B72-B931-CCED805105F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6} = {E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB} = {6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{33562B5C-A27D-4902-8CDD-A4E223326512}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.Debug|Any CPU.ActiveCfg = SingleImage
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.DVD-5|Any CPU.Build.0 = DVD-5
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.Release|Any CPU.ActiveCfg = SingleImage
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{C592361D-CCD1-4B72-B931-CCED805105F9}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

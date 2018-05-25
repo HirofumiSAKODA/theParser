@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="theParser.epgUnitHeader" Collapsed="true">
+    <Position X="4" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAQAAAAAAAgAAAAAADAAAAAAAAAAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.epgUnitText" Collapsed="true">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAAAigAAAQAAIQAQAgEAAAAACAIAAAAAAQAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.epgUnitBin" Collapsed="true">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAQAAAAAAAgAAAAAACAIAAAAAAAAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.epgUnitHex" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAAACAUAAQAAAAAAAgAAAAAAiAIAAAAAAAAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.epgUnitDec" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAAACAUAAQAAAAAAAgAAEAAACAIAAAAAAAAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.epgUnitDateTime" Collapsed="true">
+    <Position X="1" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAACACBAACQAgAAAAAAAAAAAAiAAAAAAAAAAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.tableRange" Collapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAAAAQAAABABIAABQAAggAIAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>arib2byteChar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.arib2byteChar" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAwAAMAACAAAAIAAAAACEAAAAAAAAIAABAAAABAwAA=</HashCode>
+      <FileName>arib2byteChar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgHeader" Collapsed="true">
+    <Position X="4" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgGenleBig" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgGenleSmall" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioCode" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioName" Collapsed="true">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQ=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioQuority" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioSamplingRate" Collapsed="true">
+    <Position X="1.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgTag" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioStreamType" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgVideoComponentTag" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgVideoComponentType" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgVideoType" Collapsed="true">
+    <Position X="3.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioComponentType" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioComponentTag" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgAudioMultiLingul" Collapsed="true">
+    <Position X="11.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgMainFlag" Collapsed="true">
+    <Position X="13.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgPayment" Collapsed="true">
+    <Position X="15.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgDuration" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgTitle" Collapsed="true">
+    <Position X="1.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgDescribe" Collapsed="true">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgExtTitle" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgExtDescription" Collapsed="true">
+    <Position X="12.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgNetowrkId" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgServiceId" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgEventId" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.epgEventTime" Collapsed="true">
+    <Position X="1" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.ExchangeLetter" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAIAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExchangeLetter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.Form1" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAAAACIIKBEAggCAgABCIAAOAAgAEAQEAEAAgAo=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.KanjiMaxData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAASAAAACAAAAAAIAAAAAAAMAAICAAACAEQCAAAAAAA=</HashCode>
+      <FileName>KanjiMaxData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="theParser.madaraTestData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAUgAAEAAAAAABAAAAAQAAAAAAAAEAAAAAAAAAEAAA=</HashCode>
+      <FileName>madaraTestData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="theParser.outputFormatExtList" Collapsed="true">
+    <Position X="4.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="theParser.outputFormatMadara" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAAAAAAQAABAAAAAAAAAAACAAAAAAAABAAIA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.outputFormatGenle">
+    <Position X="1.25" Y="10.75" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="theParser.outputFormatGenle.genleTableStruct" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>outputFormat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAACAEAAAAAAQAAAAAABAAAAAAIAIAAAAAAAAAAAA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.outputFormatVideo">
+    <Position X="3.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAAAAQAQAAAAAAgAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.outputFormatAudio">
+    <Position X="5.75" Y="10.75" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="theParser.outputFormatAudio.audioDispTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>outputFormat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="theParser.outputFormatAudio.audioComponentStruct" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>outputFormat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAAABECQAAAAEAgAKIxAVAAAAAAAAAAAAABA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.outputFormatExtDescription">
+    <Position X="8" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAEQAAAAAQAIAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.outputFormatBasic" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AOAAAAYEQAAAAAQIEAQQAACMAAgBQAAEgAACAAEAgAA=</HashCode>
+      <FileName>outputFormat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="theParser.parseMain" Collapsed="true">
+    <Position X="27.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEKwAoKAAwAAIkBAC4QAIIUEAACKERQjCAAwAAABEAA=</HashCode>
+      <FileName>parseMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.Program" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.serviceFormat" Collapsed="true">
+    <Position X="27.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAwEAAAAAAAAAIRAAIAEAAAAAAAJBAAQCAAgAAAAAAE=</HashCode>
+      <FileName>ServiceFileManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.ServiceFileItem" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAQAAAAAAAIAAAAA=</HashCode>
+      <FileName>ServiceFileManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.settings" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAACACAAAABAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.Properties.Resources" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="theParser.Properties.Settings" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="theParser.epgUnit" Collapsed="true">
+    <Position X="24" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>abstract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="theParser.buildTestData" Collapsed="true">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KanjiMaxData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="theParser.INCLUDECHECK" Collapsed="true">
+    <Position X="22.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAABAAAAACA=</HashCode>
+      <FileName>arib2byteChar.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="theParser.NETWORKID" Collapsed="true">
+    <Position X="24" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAEAAEAAAAAA=</HashCode>
+      <FileName>epgParts.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="メイリオ" Size="9" />
+</ClassDiagram>
