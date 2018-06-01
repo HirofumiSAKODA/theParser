@@ -781,8 +781,6 @@ namespace theParser
                         checkAndOutput(ref outList, service, today, lastDay);
                         }
                         break;
-                    case serviceFormat.MyType.JLAB035:
-                        break;
                     }
                     outList.Clear();
                 }
@@ -856,8 +854,66 @@ namespace theParser
             return false;
         }
 
+        private Int32 manageAudioIndex = 0;
+
+        private int manage035Audio(ref List<outputFormatBasic> outList){
+            foreach (outputFormatBasic oneEvent in outList)
+            {
+                int tag = 0x10;
+                oneEvent.audioInfo.Clear();
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                manageAudioIndex++;
+                tag++;
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                manageAudioIndex++;
+                tag++;
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                manageAudioIndex++;
+                tag++;
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                manageAudioIndex++;
+                tag++;
+            }
+            return 1;
+        }
+
+        private Int32 manageVideoIndex = 0;
+
+        /// <summary>
+        /// Video要素を、035向けに捏造する。
+        /// H.264 → 1080i(b1,b3,b4)  H.265 → 1080i(b1,b3,b4),1080p(e1,e3,e4),2160p(93)
+        /// </summary>
+        /// <param name="outList"></param>
+        /// <returns></returns>
+        private int manage035Video(ref List<outputFormatBasic> outList, serviceFormat service)
+        {
+            int ret=0;
+            foreach (outputFormatBasic oneEvent in outList)
+            {
+                oneEvent.videoInfo.Clear();
+                oneEvent.videoInfo.Add(new outputFormatVideo(service.forceJlab035_videokind,manageVideoIndex));
+                manageVideoIndex++;
+            }
+            return ret;
+        }
+
+        private void checkAndOutput035(ref List<outputFormatBasic> outList, serviceFormat service, DateTime start, DateTime end)
+        {
+            outList = this.checkOutList(service, outList, start, end);
+            this.manage035Audio(ref outList);
+            this.manage035Video(ref outList, service);
+            Int32 lines = this.outputCsvFile(outList);
+            this.bw.ReportProgress(progressValue,
+                                   "output File:" + service.serviceName.ToString() + "(" + lines.ToString() + " lines)");
+            this.outputRenewFile(allservice.services);
+        }
+
         private void checkAndOutput(ref List<outputFormatBasic> outList, serviceFormat service, DateTime start, DateTime end)
         {
+            if( service.forceJlab035 ){
+                checkAndOutput035(ref outList, service, start,end);
+                return;
+            }
             outList = this.checkOutList(service, outList, start, end);
             Int32 lines = this.outputCsvFile(outList);
             this.bw.ReportProgress(progressValue,

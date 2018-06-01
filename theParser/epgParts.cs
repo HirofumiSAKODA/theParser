@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using HtmlAgilityPack;
+using System.Linq;
 
 namespace theParser
 {
@@ -378,23 +379,87 @@ namespace theParser
         }
     }
 
+    public enum AUDIOCODE
+    {
+        JAPANESE /*日本語*/ = 0x6A706E,
+        ENGLISH /*英語*/ = 0x656E67,
+        DEUTSCH /*ドイツ語*/ = 0x646575,
+        FRENCH /*フランス語*/ = 0x667261,
+        ITALIANO /*イタリア語*/ = 0x697461,
+        RUSSIAN /*ロシア語 */ = 0x727573,
+        CHINESE /*中国語 */= 0x7A686F,
+        KOREAN /*韓国語*/ = 0x6B6F72,
+        SPANISH /*スペイン語*/ = 0x737061,
+        OTHER /*その他 */ = 0x657463
+    };
+
+    public class AudioCodeData {
+        public AUDIOCODE code;
+        public Int32 value;
+        public string name;
+
+        public AudioCodeData(AUDIOCODE code, Int32 value, string name){
+            this.code = code;
+            this.value = value;
+            this.name = name;
+        }
+    }
+
+    public class AudioCodeClass {
+        public List<AudioCodeData> AudioCodeDataAry;
+
+        public AudioCodeClass()
+        {
+            AudioCodeDataAry = new List<AudioCodeData>();
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.JAPANESE,0x6A706E, "にほんご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.ENGLISH,0x656E67, "えいご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.DEUTSCH,0x646575, "どいつご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.FRENCH,0x667261, "ふらんすご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.ITALIANO,0x697461, "いたりあご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.RUSSIAN,0x727573, "ろしあご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.CHINESE,0x7A686F, "ちゅうごくご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.KOREAN,0x6B6F72, "かんこくご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.SPANISH,0x737061, "すぺいんご"));
+            AudioCodeDataAry.Add(new AudioCodeData(AUDIOCODE.OTHER,0x657463, "そのほか"));
+        }
+
+        public Int32 GetCodeCycle(Int32 index)
+        {
+            AudioCodeData p = AudioCodeDataAry[ index % AudioCodeDataAry.Count() ];
+            return p.value;
+        }
+        public string GetNameCycle(Int32 index)
+        {
+            AudioCodeData p = AudioCodeDataAry[ index % AudioCodeDataAry.Count() ];
+            return p.name;
+        }
+
+        public string GetName(AUDIOCODE code){
+            var o = from p in AudioCodeDataAry
+                where p.code == code
+                select p;
+            if( o.Count() != 1 ){
+                return AudioCodeDataAry.Last().name;
+            }
+            return o.First().name;
+        }
+        public string GetName(Int32 value)
+        {
+            var o = from p in AudioCodeDataAry
+                    where p.value == value
+                    select p;
+            if (o.Count() != 1)
+            {
+                return AudioCodeDataAry.Last().name;
+            }
+            return o.First().name;
+        }
+
+    }
 
     [Serializable()]
     public class epgAudioCode : epgUnitHex
     {
-        public enum AUDIOCODE
-        {
-            JAPANESE /*日本語*/ = 0x6A706E,
-            ENGLISH /*英語*/ = 0x656E67,
-            DEUTSCH /*ドイツ語*/ = 0x646575,
-            FRENCH /*フランス語*/ = 0x667261,
-            ITALIANO /*イタリア語*/ = 0x697461,
-            RUSSIAN /*ロシア語 */ = 0x727573,
-            CHINESE /*中国語 */= 0x7A686F,
-            KOREAN /*韓国語*/ = 0x6B6F72,
-            SPANISH /*スペイン語*/ = 0x737061,
-            OTHER /*その他 */ = 0x657463
-        };
         public epgAudioCode() : base(6)
         {
         }
@@ -402,8 +467,13 @@ namespace theParser
         {
             this.value = (Int32) v;
         }
+        public epgAudioCode(Int32 v, AudioCodeClass au) : this()
+        {
+            this.value = au.GetCodeCycle(v);
+        }
         public epgAudioCode(Int32 v) : this()
         {
+            v = v % Enum.GetNames(typeof(AUDIOCODE)).Length;
             if (Enum.IsDefined(typeof(AUDIOCODE), v) == true)
             {
                 this.value = v;
@@ -435,10 +505,19 @@ namespace theParser
             : base(16)
         {
         }
+
         public epgAudioName(string v) : this()
         {
             this.main = v;
         }
+
+        public bool SetSubName(string v)
+        {
+            this.sub = v;
+            return true;
+        }
+
+
         public override string ToOutput()
         {
             string ret = this.main;
@@ -485,6 +564,7 @@ namespace theParser
         }
     }
 
+
     [Serializable()]
     public class epgAudioStreamType : epgUnitHex
     {
@@ -493,8 +573,87 @@ namespace theParser
         }
         public epgAudioStreamType(Int32 v) : this()
         {
-            this.value = v;
+            this.set(v);
         }
+        public class streamTypeClass
+        {
+            public int code;
+            public string name;
+            public string nameL;
+            public List<epgAudioComponentType> typeList;
+
+            public streamTypeClass(int code, string name, int[] list)
+            {
+                this.code = code;
+                this.name = name;
+                this.nameL = Microsoft.VisualBasic.Strings.StrConv(
+                    name, Microsoft.VisualBasic.VbStrConv.Wide, 0x411); // 全角変換
+                typeList = new List<epgAudioComponentType>();
+                foreach( int p in list ){
+                    typeList.Add(new epgAudioComponentType(p));
+                }
+            }
+        }
+
+        streamTypeClass[] AudioDataAry = {
+                new streamTypeClass(0x04, "MPEG2BC", new int[]{1,2,3}),
+                new streamTypeClass(0x0F, "MPEG2AAC", new int[]{ 1, 3, 2, 9 }), 
+                new streamTypeClass(0x11, "MPEG4AAC", new int[]{ 3,9,0xe, 0x11}),
+                new streamTypeClass(0x1C, "MPEG4ALC", new int[]{ 3, 9} ),
+        };
+
+        public bool set(Int32 v)
+        {
+            bool ret = true;
+            var o = from p in AudioDataAry
+                    where p.code == v
+                    select p;
+            if(o.Count() == 1){
+                this.value = v;
+            } else {
+                System.Diagnostics.Debug.Assert(true,"その値は使えない");
+                ret = false;
+                this.clear();
+            }
+            return ret;
+        }
+
+        public bool IsOkType( epgAudioComponentType v ){
+            bool ret = true;
+            var o = from p in AudioDataAry
+                    where p.code == this.value
+                    select p;
+            if( o.Count() != 1 ){
+                return false;
+            }
+            streamTypeClass my = o.First();
+
+            var oo = from pp in my.typeList
+                where pp == v
+                select pp;
+            if(oo.Count() != 1){
+            return false;
+            }
+            return true;
+        }
+
+        public bool IsOkType( Int32 v ){
+            return IsOkType(new epgAudioComponentType(v));
+        }
+
+        public Int32 GetComponentType(Int32 index){
+            Int32 ret = 3; // streo
+            var o = from p in AudioDataAry
+                    where p.code == this.value
+                    select p;
+            if (o.Count() != 1)
+            {
+                return ret;
+            }
+            ret = o.First().typeList[index % o.First().typeList.Count()].value;
+            return ret;
+        }
+
     }
 
     [Serializable()]
@@ -530,9 +689,23 @@ namespace theParser
         }
     }
 
+
+
+
+
     [Serializable()]
     public class epgAudioComponentType : epgUnitHex
     {
+    /*
+     * 1/0（シングルモノ）		:1
+1/0+1/0（デュアルモノ）	:2
+2/0（ステレオ）		:3
+3/1				:7
+3/2				:8
+3/2+LFE(5.1ch)		:9   
+7.1ch				:E
+22ch				:11
+*/
         public epgAudioComponentType() : base(2)
         {
         }

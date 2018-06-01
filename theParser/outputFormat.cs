@@ -5,6 +5,7 @@ using System.Text;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Diagnostics;
 
 namespace theParser
 {
@@ -368,6 +369,8 @@ new genleTableStruct(0xf,0xf),
         public epgVideoComponentType componentType = null;
         public epgVideoType videoType = null;
         private List<int> videoTypeAry = new List<int> { 1, 3, 4, 0xb1, 0xb2, 0xb4, 0x98 ,0xe1,0xe3,0xe4};
+        private List<int> videoTypeAry265 = new List<int> { 0xb1, 0xb2, 0xb4, 0x93 ,0xe1,0xe3,0xe4};
+        private List<int> videoTypeAry264 = new List<int> { 0xb1, 0xb2, 0xb4};
 
         // public List<epgUnit> paramList { get; set; }
 
@@ -383,9 +386,23 @@ new genleTableStruct(0xf,0xf),
             this.videoType = new epgVideoType("HD動画");
             this.paramList = new List<epgUnit>();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="type">265/264</param>
+        /// <param name="index"></param>
+        public outputFormatVideo(int type, int index) : this() 
+        {
+            if( type == 264 ){
+                this.componentType = new epgVideoComponentType(videoTypeAry264[index % videoTypeAry264.Count()]);
+            } else {
+                this.componentType = new epgVideoComponentType(videoTypeAry265[index % videoTypeAry265.Count()]);
+            }
+            setType(this.componentType.value);
+        }
 
         public outputFormatVideo(string type)
-            : base()
+            : this()
         {
             string name = "HD映像";
             Int32 num = 0xb3;
@@ -407,7 +424,7 @@ new genleTableStruct(0xf,0xf),
 
 
         public outputFormatVideo(Int32 type, ref Random rnd)
-            : base()
+            : this()
         {
             int v = type;
             if (v == 0)
@@ -419,7 +436,7 @@ new genleTableStruct(0xf,0xf),
             this.componentTag = new epgVideoComponentTag(0);
         }
         public outputFormatVideo(Int32 type)
-            : base()
+            : this()
         {
             setType(type);
             this.tag = new epgTag(0x50);
@@ -510,10 +527,33 @@ new genleTableStruct(0xf,0xf),
             this.mainFlag = new epgMainFlag(1);
             this.quority = new epgAudioQuority(2);
             this.samplingRate = new epgAudioSamplingRate(5);
-            this.mainCode = new epgAudioCode(epgAudioCode.AUDIOCODE.JAPANESE);
+            this.mainCode = new epgAudioCode(AUDIOCODE.JAPANESE);
             this.subCode = null; // new epgAudioCode(0);
             this.name = new epgAudioName("日本語");
             this.streamType = new epgAudioStreamType(0x0f);
+        }
+
+        public outputFormatAudio(int tag, int type, ref int index) : this(){
+            this.componentTag = new epgAudioComponentTag(tag);
+            this.streamType = new epgAudioStreamType(type);
+            Debug.Assert(this.streamType.value > 0 );
+            this.componentType = new epgAudioComponentType(this.streamType.GetComponentType(index));
+            this.mainFlag = new epgMainFlag(0);
+            this.quority = new epgAudioQuority(2);
+            this.samplingRate = new epgAudioSamplingRate(5);
+            AudioCodeClass au = new AudioCodeClass();
+            this.mainCode = new epgAudioCode(index, au);
+            this.name = new epgAudioName( au.GetName(this.mainCode.value));
+            if( this.componentType.IsDualMono() ){
+                this.subCode = new epgAudioCode(index+1, au);
+                this.name.SetSubName(au.GetName(this.subCode.value));
+                this.esMultiFlag = new epgAudioMultiLingul(1);
+            }
+            else {
+                this.esMultiFlag = new epgAudioMultiLingul(0);
+                this.subCode = null; // new epgAudioCode(0);
+            }
+            // return true;
         }
 
         public override void makeList()
@@ -614,7 +654,9 @@ new genleTableStruct(0xf,0xf),
             new audioComponentStruct(3,false,"ステレオ"),
             new audioComponentStruct(7,false,"3/1"),
             new audioComponentStruct(8,false,"3/2"),
-            new audioComponentStruct(9,false,"3/2+LFE")
+            new audioComponentStruct(9,false,"3/2+LFE"),
+            new audioComponentStruct(14 /* 0x0E */,false,"7.1"),
+            new audioComponentStruct(17 /* 0x11 */,false,"22"),
         };
 
         public audioComponentStruct getNextComponent(ref Int32 counter, bool dualMonoFlag)
@@ -626,6 +668,13 @@ new genleTableStruct(0xf,0xf),
             counter++;
             return audioComponent[counter % audioComponent.Count];
         }
+
+        /*
+         *  MPEG2AAC(LC) ... モノ、ステレオ、デュアルモノ、5.1
+         *  MPEG4AAC     ... ステレオ、5.1、7.1ch、22.2ch
+         *  MPEG4ALS     ... ステレオ、5.1
+         * 
+         */
 
         public bool makeTestDataSound(Int32 esNumber, ref Int32 counter, ref Int32 soundKindCounter, ref Int32 soundNameCounter, bool multiFlag, bool dualMonoFlag){
             this.tag = new epgTag(0xc4);
@@ -654,8 +703,8 @@ new genleTableStruct(0xf,0xf),
             this.samplingRate = new epgAudioSamplingRate(((soundKindCounter % 2)==1)?(5):(7));
 
 
-            Int32 code = soundNameCounter % Enum.GetValues(typeof(epgAudioCode.AUDIOCODE)).Length;
-            this.mainCode = new epgAudioCode((Int32)(Enum.GetValues(typeof(epgAudioCode.AUDIOCODE))).GetValue(code));
+            Int32 code = soundNameCounter % Enum.GetValues(typeof(AUDIOCODE)).Length;
+            this.mainCode = new epgAudioCode((Int32)(Enum.GetValues(typeof(AUDIOCODE))).GetValue(code));
             this.name.main = getAudoNameFromCode(this.mainCode.value,soundNameCounter);
             soundNameCounter++;
             if (compo.existSub != true)
@@ -665,8 +714,8 @@ new genleTableStruct(0xf,0xf),
             else
             {
                 compo = getNextComponent(ref soundKindCounter, dualMonoFlag);
-                code = soundNameCounter % Enum.GetValues(typeof(epgAudioCode.AUDIOCODE)).Length;
-                this.subCode = new epgAudioCode((Int32)(Enum.GetValues(typeof(epgAudioCode.AUDIOCODE))).GetValue(code));
+                code = soundNameCounter % Enum.GetValues(typeof(AUDIOCODE)).Length;
+                this.subCode = new epgAudioCode((Int32)(Enum.GetValues(typeof(AUDIOCODE))).GetValue(code));
 //                new epgAudioCode((epgAudioCode.AUDIOCODE)Enum.ToObject(typeof(epgAudioCode.AUDIOCODE), code));
                 this.name.sub = getAudoNameFromCode(this.subCode.value,soundNameCounter);
                 soundNameCounter++;
@@ -684,7 +733,7 @@ new genleTableStruct(0xf,0xf),
 
             if (ret.Count() > 1)
             {
-                if ((counter % Enum.GetValues(typeof(epgAudioCode.AUDIOCODE)).Length) > (Enum.GetValues(typeof(epgAudioCode.AUDIOCODE)).Length / 2))
+                if ((counter % Enum.GetValues(typeof(AUDIOCODE)).Length) > (Enum.GetValues(typeof(AUDIOCODE)).Length / 2))
                 {
                     result = ret.ElementAt(1);
                 }

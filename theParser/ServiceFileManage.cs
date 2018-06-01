@@ -13,6 +13,8 @@ namespace theParser
         public string serviceName = null;
         public string uri = "";
         public bool useExchangeLetter = true;
+        public bool forceJlab035 = false;
+        public int forceJlab035_videokind = 265;
         public epgVideoComponentType DefaultVideoComponentType = new epgVideoComponentType(0xb3);
 
         /// <summary>まだらグループ名 </summary>
@@ -37,13 +39,16 @@ namespace theParser
 
         public List<outputFormatBasic> outList;
 
-        public enum MyType { NONE, URI, ALLKANJI, MADARA, INTERBEE,MAXDATA,JLAB035 };
+        public List<string> paramList;
+
+        public enum MyType { NONE, URI, ALLKANJI, MADARA, INTERBEE,MAXDATA };
         public MyType type = MyType.NONE;
 
         public serviceFormat(string net, string service, string name)
         {
             this.networkId = new epgNetowrkId(Convert.ToInt32(net, 16));
             this.serviceId = new epgServiceId(Convert.ToInt32(service));
+            this.paramList = new List<string>();
             // this.serviceName = new epgTitle(name);
         }
         public serviceFormat(string net, string service, string name, string uri)
@@ -51,29 +56,26 @@ namespace theParser
             this.networkId = new epgNetowrkId(Convert.ToInt32(net, 16));
             this.serviceId = new epgServiceId(Convert.ToInt32(service));
             this.serviceName = name;
+            this.paramList = new List<string>();
 
         }
         public serviceFormat(string[] param)
         {
             if (param.Count() < 4) return;
-            this.networkId = new epgNetowrkId(Convert.ToInt32(param[0].Trim(), 16));
-            this.serviceId = new epgServiceId(Convert.ToInt32(param[1].Trim()));
-            this.serviceName = param[2].Trim();
+            this.paramList = new List<string>(param);
+            this.networkId = new epgNetowrkId(Convert.ToInt32(paramList[0].Trim(), 16));
+            this.serviceId = new epgServiceId(Convert.ToInt32(paramList[1].Trim()));
+            this.serviceName = paramList[2].Trim();
 
-            switch (param[3].Trim().ToLower())
+            switch (paramList[3].Trim().ToLower())
             {
-            case "jlab035":
-                this.type = MyType.JLAB035; // 音声 1～4
-                this.uri = param[3].Trim();
-                this.useExchangeLetter = true;
-                break;
             case "interbee":
                 this.type = MyType.INTERBEE;
-                this.uri = param[4].Trim(); // Table 1 か 2 か
+                this.uri = paramList[4].Trim(); // Table 1 か 2 か
                 break;
             case "maxdata":
                 this.type = MyType.MAXDATA;
-                this.uri = param[4].Trim();
+                this.uri = paramList[4].Trim();
                 break;
             case "allkanji":
                 this.type = MyType.ALLKANJI;
@@ -82,18 +84,18 @@ namespace theParser
                 if (param.Count() < 9 ) return;
                 this.type = MyType.MADARA;
                 this.madaraGroupName = param[4].Trim();
-                Int32.TryParse(param[5].Trim(), out this.madaraType);
-                Int32.TryParse(param[6].Trim(), out this.madaraMethod);
-                Int32.TryParse(param[7].Trim(), out this.madaraToChNum);
-                this.madaraResolution = param[8].Trim();
+                Int32.TryParse(paramList[5].Trim(), out this.madaraType);
+                Int32.TryParse(paramList[6].Trim(), out this.madaraMethod);
+                Int32.TryParse(paramList[7].Trim(), out this.madaraToChNum);
+                this.madaraResolution = paramList[8].Trim();
                 if (param.Count() > 9)
                 {
-                    this.madaraSource = param[9].Trim();
-                    this.uri = param[9].Trim();
+                    this.madaraSource = paramList[9].Trim();
+                    this.uri = paramList[9].Trim();
                 }
-                if (param.Count() > 10)
+                if (paramList.Count() > 10)
                 {
-                    string[] durations = param[10].Trim().Split('/');
+                    string[] durations = paramList[10].Trim().Split('/');
                     List<Int32> durationAry = new List<int>();
                     foreach (string duration in durations)
                     {
@@ -107,33 +109,37 @@ namespace theParser
                 break;
             default:
                 this.type = MyType.URI;
-                this.uri = param[3].Trim();
+                this.uri = paramList[3].Trim();
                 this.useExchangeLetter = true;
-                if (param.Count() > 3)
+                break;
+            }
+            if (paramList.Count() > 3) // 他のパラメータを取得する。
+            {
+                
+                if ( paramList.Find(x => x == "jlab035") != ""){
+                    this.forceJlab035 = true;
+                }
+
+                if( string.IsNullOrEmpty(paramList.Find(x => x == "035-264"))){
+                    this.forceJlab035_videokind = 265;
+                } else {
+                    this.forceJlab035_videokind = 264;
+                }
+                // ARIB 外字強制変換を使わない？
+                if ( paramList.Find(x => x == "noExtChar") != ""){
+                    this.useExchangeLetter = false;
+                }
+                // VideoComponentType 値 初期値変更
+                List<string> videoList =  paramList.FindAll( x => x.StartsWith("videotype=0x"));
+                if (videoList.Count() > 0)
                 {
-                    // ARIB 外字強制変換を使わない？
-                    var obj = from p in param
-                              where p.Trim() == "noExtChar"
-                              select p;
-                    if (obj.Count() == 1)
-                    {
-                        this.useExchangeLetter = false;
-                    }
-                    // VideoComponentType 値 初期値変更
-                    obj = from p in param
-                              where p.Trim().StartsWith("videotype=0x") == true
-                              select p;
-                    if (obj.Count() > 0)
-                    {
-                        String value = obj.First().Trim().Substring("videotype=0x".Length);
+                    foreach(string v in videoList){
                         int typeValue = 0xb3;
-                        if (int.TryParse(value, NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture, out typeValue) == true)
-                        {
-                            this.DefaultVideoComponentType.value = typeValue;
-                        }
+                        string value = v.Trim().Substring("videotype=0x".Length);
+                        int.TryParse(value, NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture, out typeValue);
+                        this.DefaultVideoComponentType.value = typeValue;
                     }
                 }
-                break;
             }
         }
 
