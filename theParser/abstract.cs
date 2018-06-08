@@ -1146,6 +1146,10 @@ new ExchangeLetter.structExchangeTable(0x7E7D,0x325B,0xF4FB,"31+丸",""),
 
         public string ToOutput()
         {
+            if( this.value == -1)
+            {
+                return "#";
+            }
             string fmt = "X";
             if (this.numberOf > 0)
             {
@@ -1229,6 +1233,9 @@ new ExchangeLetter.structExchangeTable(0x7E7D,0x325B,0xF4FB,"31+丸",""),
         }
         public virtual string ToOutput()
         {
+            if( this.value == -1){
+                return "#";
+            }
             string fmt = "0";
             if (this.numberOf != 0)
             {
@@ -1238,6 +1245,9 @@ new ExchangeLetter.structExchangeTable(0x7E7D,0x325B,0xF4FB,"31+丸",""),
             return value.ToString(fmt);
         }
         public virtual string ToOutput(Int32 keta){
+            if( this.value == -1){
+                return "#";
+            }
             string fmt = "0";
             fmt = fmt.PadLeft(keta, '0');
             return value.ToString(fmt);

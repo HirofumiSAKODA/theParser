@@ -84,6 +84,32 @@ namespace theParser
         }
     }
 
+    [Serializable()]
+    public class outputFormatParental : outputFormatExtLine
+    {
+        private epgTitle tag = null;
+        private epgParentalCode code;
+        public epgParentalRate rate = null;
+
+        public outputFormatParental()
+        {
+            this.tag = new epgTitle("55");
+            this.code = new epgParentalCode("4A504E");
+            this.rate = new epgParentalRate(-1); // 未使用
+        }
+        public override int CompareTo(object obj)
+        {
+            return this.rate.value.CompareTo((obj as epgParentalRate).value);
+        }
+        public override void makeList()
+        {
+            this.paramList = new List<epgUnit>();
+            this.paramList.Add(this.tag);
+            this.paramList.Add(this.code);
+            this.paramList.Add(this.rate);
+        }
+    }
+
 
     [Serializable()]
     public class outputFormatContentAvailability : outputFormatExtLine
@@ -160,6 +186,7 @@ namespace theParser
             this.aps = new epgAPSControlData();
         }
 
+
         public void Clear()
         {
             this.recoriding = new epgDigitalRecordingControlData();
@@ -179,10 +206,12 @@ namespace theParser
         public override void makeList()
         {
             this.paramList = new List<epgUnit>();
+            /*
             if (this.copyControl.value == 0)
             {
                 return;
             }
+            */
             this.paramList.Add(this.tag);
             this.paramList.Add(this.recoriding);
             this.paramList.Add(this.copyControl);
@@ -499,6 +528,8 @@ new genleTableStruct(0xf,0xf),
     [Serializable()]
     public class outputFormatAudio : outputFormatExtList
     {
+        private bool bForce035 = false;
+
         public epgTag tag = null;
         public epgAudioComponentTag componentTag = null;
         public epgAudioComponentType componentType = null;
@@ -510,6 +541,7 @@ new genleTableStruct(0xf,0xf),
         public epgAudioCode subCode = null;
         public epgAudioName name = null;
         public epgAudioStreamType streamType = null;
+        public epgAudioSimulGroup simulGroup = null;
 
         // public List<epgUnit> paramList {get;set;}
 
@@ -517,8 +549,10 @@ new genleTableStruct(0xf,0xf),
         {
             return this.componentTag.CompareTo((obj as outputFormatAudio).componentTag);
         }
-        public outputFormatAudio()
+        public outputFormatAudio(bool Force035 = false)
         {
+            this.bForce035 = Force035;
+
             this.paramList = new List<epgUnit>();
             this.tag = new epgTag(0xc4);
             this.componentTag = new epgAudioComponentTag(0x10);
@@ -531,9 +565,12 @@ new genleTableStruct(0xf,0xf),
             this.subCode = null; // new epgAudioCode(0);
             this.name = new epgAudioName("日本語");
             this.streamType = new epgAudioStreamType(0x0f);
+            this.simulGroup = new epgAudioSimulGroup(-1);
         }
 
-        public outputFormatAudio(int tag, int type, ref int index) : this(){
+        private Int32[] valuesOfSimulGroup = { -1, 0, 0x1, 0x10, 0xff };
+
+        public outputFormatAudio(int tag, int type, ref int index, bool Force035 = false) : this(Force035){
             this.componentTag = new epgAudioComponentTag(tag);
             this.streamType = new epgAudioStreamType(type);
             Debug.Assert(this.streamType.value > 0 );
@@ -553,6 +590,9 @@ new genleTableStruct(0xf,0xf),
                 this.esMultiFlag = new epgAudioMultiLingul(0);
                 this.subCode = null; // new epgAudioCode(0);
             }
+            // とりあえず simul group は、なし、00、01、10、FF を回してみる。
+            Int32 simul = valuesOfSimulGroup[index % valuesOfSimulGroup.Count() ];
+            this.simulGroup = new epgAudioSimulGroup(simul);
             // return true;
         }
 
@@ -570,6 +610,9 @@ new genleTableStruct(0xf,0xf),
             this.paramList.Add(this.subCode);
             this.paramList.Add(this.name);
             this.paramList.Add(this.streamType);
+            if( bForce035 ){
+                this.paramList.Add(this.simulGroup);
+            }
         }
 
 
@@ -815,6 +858,7 @@ new genleTableStruct(0xf,0xf),
         public outputFormatEncoderInfo encoderInfo = new outputFormatEncoderInfo();
         public outputFormatMadara madara = new outputFormatMadara();
         public outputFormatCCJ ccj = new outputFormatCCJ();
+        public outputFormatParental parental = new outputFormatParental();
 
         public string detailUri = "";
         public serviceFormat service = null;
@@ -834,6 +878,12 @@ new genleTableStruct(0xf,0xf),
             this.payment = new epgPayment(0);
 
             this.exchangeLetter = ex;
+        }
+
+        public void clearWithoutBasic()
+        {
+            this.paramList.Clear();
+            this.payment.clear();
         }
 
         public void clear()
@@ -886,11 +936,14 @@ new genleTableStruct(0xf,0xf),
             return String.Join(",",result.ToArray());
         }
 
-        public byte[] getResultListByte()
+        public byte[] getResultListByte( serviceFormat sf )
         {
             List<byte> result = new List<byte>();
 
             setInfoLineToResult(this.paramList, ref result);
+            if( sf.mostSimple == true){
+                return result.ToArray();
+            }
             if (this.madara != null)
             {
                 this.madara.makeList();
@@ -909,6 +962,10 @@ new genleTableStruct(0xf,0xf),
             setInfoLineToResult(this.ccj.paramList, ref result);
 
             setInfoListToResult(this.extDescriptorInfo, ref result);
+
+            this.parental.makeList();
+            setInfoLineToResult(this.parental.paramList, ref result);
+
 
             return result.ToArray();
         }

@@ -85,7 +85,7 @@ namespace theParser
                 //                ou.contents.set("Contents:" + current.ToLongDateString() + "," + current.ToLongTimeString());
                 // ou.videoInfo = makeVideoInfoList(ref counter, this.service.madaraResolution); // HDで
                 ou.videoInfo = makeVideoInfoList(ref counter, this.service.DefaultVideoComponentType.value);
-                ou.audioInfo = makeAudioInfoList(ref counter, ref soundKindCounter, ref soundNameCounter);
+                ou.audioInfo = makeAudioInfoList(ref ou.service, ref counter, ref soundKindCounter, ref soundNameCounter);
 
                 line = "";
                 keepTableFlag = makeContentsWithAllKanji(ref kanji, ref ou, ref line);
@@ -152,7 +152,7 @@ namespace theParser
                 ou.duration.value = duration;
 //                ou.contents.set("Contents:" + current.ToLongDateString() + "," + current.ToLongTimeString());
                 ou.videoInfo = makeVideoInfoList(ref counter); // HDで
-                ou.audioInfo = makeAudioInfoList(ref counter,ref soundKindCounter, ref soundNameCounter);
+                ou.audioInfo = makeAudioInfoList(ref service, ref counter,ref soundKindCounter, ref soundNameCounter);
 
                 line = "";
                 keepTableFlag = makeContentsWithAllKanji(ref kanji, ref ou, ref line);
@@ -339,7 +339,12 @@ new videoDataStruct(1,0x93,"2160p-16:9", "２１６０ｐ１"),
             return makeVideoInfoListFromType(ref typeValue);
         }
 
-        private List<outputFormatExtList> makeAudioInfoList(ref int counter, ref Int32 soundKindCounter, ref Int32 soundNameCounter)
+        private List<outputFormatExtList> makeAudioInfoList(
+        ref serviceFormat service,
+        ref int counter, 
+        ref Int32 soundKindCounter, 
+        ref Int32 soundNameCounter
+        )
         {
 /*
          → Audio 以下を、Video同様、Indexの順番で適合させる。
@@ -361,8 +366,8 @@ new videoDataStruct(1,0x93,"2160p-16:9", "２１６０ｐ１"),
  */
 
             List<outputFormatExtList> audio = new List<outputFormatExtList>();
-            outputFormatAudio es1 = new outputFormatAudio();
-            es1 = new outputFormatAudio();
+            outputFormatAudio es1 = new outputFormatAudio(service.forceJlab035);
+            // es1 = new outputFormatAudio();
             outputFormatAudio es2 = null;
 
             switch (counter % 6)
@@ -375,22 +380,22 @@ new videoDataStruct(1,0x93,"2160p-16:9", "２１６０ｐ１"),
                 break;
             case 2:
                 es1.makeTestDataSound(1, ref counter, ref soundKindCounter, ref soundNameCounter, true, false);
-                es2 = new outputFormatAudio();
+                es2 = new outputFormatAudio(service.forceJlab035);
                 es2.makeTestDataSound(2, ref counter, ref soundKindCounter, ref soundNameCounter, true, false);
                 break;
             case 3:
                 es1.makeTestDataSound(1, ref counter, ref soundKindCounter, ref soundNameCounter, true, true);
-                es2 = new outputFormatAudio();
+                es2 = new outputFormatAudio(service.forceJlab035);
                 es2.makeTestDataSound(2, ref counter, ref soundKindCounter, ref soundNameCounter, true, false);
                 break;
             case 4:
                 es1.makeTestDataSound(1, ref counter, ref soundKindCounter, ref soundNameCounter, true, false);
-                es2 = new outputFormatAudio();
+                es2 = new outputFormatAudio(service.forceJlab035);
                 es2.makeTestDataSound(2, ref counter, ref soundKindCounter, ref soundNameCounter, true, true);
                 break;
             case 5:
                 es1.makeTestDataSound(1, ref counter, ref soundKindCounter, ref soundNameCounter, true, true);
-                es2 = new outputFormatAudio();
+                es2 = new outputFormatAudio(service.forceJlab035);
                 es2.makeTestDataSound(2, ref counter, ref soundKindCounter, ref soundNameCounter, true, true);
                 break;
             default:

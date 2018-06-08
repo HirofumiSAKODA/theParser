@@ -13,8 +13,9 @@ namespace theParser
         public string serviceName = null;
         public string uri = "";
         public bool useExchangeLetter = true;
-        public bool forceJlab035 = false;
+        public bool forceJlab035 = true;
         public int forceJlab035_videokind = 265;
+        public bool mostSimple = true;
         public epgVideoComponentType DefaultVideoComponentType = new epgVideoComponentType(0xb3);
 
         /// <summary>まだらグループ名 </summary>
@@ -116,8 +117,13 @@ namespace theParser
             if (paramList.Count() > 3) // 他のパラメータを取得する。
             {
                 
-                if ( paramList.Find(x => x == "jlab035") != ""){
-                    this.forceJlab035 = true;
+                if( string.IsNullOrEmpty(paramList.Find(x => x == "jlab035")))
+                {
+                    this.forceJlab035 = false;
+                }
+                if( string.IsNullOrEmpty(paramList.Find(x => x == "mostsimple")))
+                {
+                    this.mostSimple = false;
                 }
 
                 if( string.IsNullOrEmpty(paramList.Find(x => x == "035-264"))){
@@ -126,7 +132,8 @@ namespace theParser
                     this.forceJlab035_videokind = 264;
                 }
                 // ARIB 外字強制変換を使わない？
-                if ( paramList.Find(x => x == "noExtChar") != ""){
+                if ( string.IsNullOrEmpty(paramList.Find(x => x == "noExtChar")))
+                {
                     this.useExchangeLetter = false;
                 }
                 // VideoComponentType 値 初期値変更

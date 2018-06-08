@@ -246,7 +246,7 @@ namespace theParser
 
 
                 // AudioInfo
-                outputFormatAudio audio = new outputFormatAudio();
+                outputFormatAudio audio = new outputFormatAudio(ou.service.forceJlab035);
                 ou.audioInfo.Add(audio);
 
 
@@ -854,23 +854,31 @@ namespace theParser
             return false;
         }
 
+        private bool removeParamWithoutBasic(ref List<outputFormatBasic> outList){
+            foreach (outputFormatBasic oneEvent in outList)
+            {
+                oneEvent.clearWithoutBasic();
+            }
+            return true;
+        }
+
         private Int32 manageAudioIndex = 0;
 
         private int manage035Audio(ref List<outputFormatBasic> outList){
             foreach (outputFormatBasic oneEvent in outList)
             {
                 int tag = 0x10;
-                oneEvent.audioInfo.Clear();
-                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                oneEvent.audioInfo.Clear();  
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex , oneEvent.service.forceJlab035));
                 manageAudioIndex++;
                 tag++;
-                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex , oneEvent.service.forceJlab035));
                 manageAudioIndex++;
                 tag++;
-                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex , oneEvent.service.forceJlab035));
                 manageAudioIndex++;
                 tag++;
-                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex ));
+                oneEvent.audioInfo.Add(new outputFormatAudio(tag, 0x0f, ref manageAudioIndex , oneEvent.service.forceJlab035));
                 manageAudioIndex++;
                 tag++;
             }
@@ -896,12 +904,80 @@ namespace theParser
             }
             return ret;
         }
+        private int manage035Parent(ref List<outputFormatBasic> outList, serviceFormat service)
+        {
+            int index = 0;
+            int ret=0;
+            foreach (outputFormatBasic oneEvent in outList){
+            }
+            return ret;
+        }
+
+        private int manage035CopyControl(ref List<outputFormatBasic> outList, serviceFormat service)
+        {
+            int index = 0;
+            int ret=0;
+            foreach (outputFormatBasic oneEvent in outList)
+            {
+                setCopyControlPatternData(index, ref oneEvent.contentAvailability, ref oneEvent.copyControlMain);
+                index++;
+            }
+            return ret;
+        }
+
+        public bool setCopyControlPatternData(int index, ref outputFormatContentAvailability contTarget, ref outputFormatCopyControl target)
+        {
+            if( CopyControlPatternAry == null ){
+                CopyControlPatternAry = new List<CopyControlPattern>();
+            }
+            if( CopyControlPatternAry.Count() == 0){
+                foreach(int a in new int[]{-1,0,1} ){
+                  foreach(int b in new int[]{0,1} ){
+                    foreach(int i in new int[]{-1,0,2,3} ){
+                      foreach(int j in new int[]{0,1} ){
+                        foreach(int k in new int[]{0,1,2,3} ){
+                           CopyControlPatternAry.Add(new CopyControlPattern(a,b,i,j,k));
+                        }
+                      }
+                    }
+                  }
+                }
+            }
+            CopyControlPattern p =CopyControlPatternAry[index % CopyControlPatternAry.Count()];
+            contTarget.restrictionmode.value = p.rest;
+            contTarget.encryptionMode.value = p.enc;
+            target.recoriding.value = p.rec;
+            target.copyControl.value = p.copycntl;
+            target.aps.value = p.aps;
+
+            return true;
+        }
+
+        private class CopyControlPattern {
+            public int rest;
+            public int enc;
+            public int rec;
+            public int copycntl;
+            public int aps;
+
+            public CopyControlPattern(int r, int e,int a, int b, int c){
+                this.rest = r;
+                this.enc = e;
+                this.rec = a;
+                this.copycntl = b;
+                this.aps = c;
+            }
+        }
+
+        private List<CopyControlPattern> CopyControlPatternAry;
+
 
         private void checkAndOutput035(ref List<outputFormatBasic> outList, serviceFormat service, DateTime start, DateTime end)
         {
             outList = this.checkOutList(service, outList, start, end);
             this.manage035Audio(ref outList);
             this.manage035Video(ref outList, service);
+            this.manage035CopyControl(ref outList, service);
             Int32 lines = this.outputCsvFile(outList);
             this.bw.ReportProgress(progressValue,
                                    "output File:" + service.serviceName.ToString() + "(" + lines.ToString() + " lines)");
@@ -1293,7 +1369,7 @@ namespace theParser
                     entry.makeList();
                     // this.bw.ReportProgress(progressValue, entry.getResult());
                     // this.textBox1.Text += entry.getResult() + "\r\n";
-                    binwriteFd.Write(entry.getResultListByte());
+                    binwriteFd.Write(entry.getResultListByte( entry.service));
                     ret++;
                 }
             }

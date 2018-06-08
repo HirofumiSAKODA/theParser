@@ -52,6 +52,7 @@ namespace theParser
         {
             this.value = 0;
             this.max = 1;
+            this.min = -1;
         }
 
         public epgCopyRestrictionMode(Int32 value)
@@ -125,6 +126,7 @@ namespace theParser
         {
             this.value = 0;
             this.max = 3;
+            this.min = -1;
         }
         public epgDigitalRecordingControlData(Int32 value)
             : this()
@@ -540,13 +542,29 @@ namespace theParser
             this.value = v;
         }
     }
+
     [Serializable()]
     public class epgAudioSamplingRate : epgUnitDec
     {
-        public epgAudioSamplingRate() : base(1)
+        public epgAudioSamplingRate()
+            : base(1)
         {
         }
-        public epgAudioSamplingRate(Int32 v) : this()
+        public epgAudioSamplingRate(Int32 v)
+            : this()
+        {
+            this.value = v;
+        }
+    }
+    [Serializable()]
+    public class epgAudioSimulGroup : epgUnitHex
+    {
+        public epgAudioSimulGroup()
+            : base(2)
+        {
+        }
+        public epgAudioSimulGroup(Int32 v)
+            : this()
         {
             this.value = v;
         }
@@ -938,6 +956,23 @@ namespace theParser
     }
 
     [Serializable()]
+    public class epgParentalRate : epgUnitHex
+    {
+        public epgParentalRate()
+            : base(0)
+        {
+            this.prefix = false;
+            this.numberOf = 2;
+        }
+        public epgParentalRate(Int32 v)
+            : this()
+        {
+            this.setMinMax(-1,0xff);
+            this.value = v;
+        }
+    }
+
+    [Serializable()]
     public class epgEventId : epgUnitDec
     {
         public override void clear()
@@ -967,6 +1002,16 @@ namespace theParser
 
             ret = (p.Day * 24 + p.Hour) * 60 + p.Minute;
             return ret;
+        }
+    }
+    [Serializable()]
+    public class epgParentalCode : epgUnitText
+    {
+        public epgParentalCode() : base(10)
+        {
+        }
+        public epgParentalCode(string code) : base(10,code)
+        {
         }
     }
 

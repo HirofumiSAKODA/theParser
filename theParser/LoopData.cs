@@ -26,7 +26,7 @@ namespace theParser
             if( index > data.Count ) {
                 index = data.Count -1;
             }
-            serviceData conf = this.data[index - 1];
+            serviceData conf = this.data.First();
 
             // 特殊 1日当たり96event、9:30AM-17:30で5分間隔。
             // StartTime は、this.today の 日付のみ借りて 9:30AM強制
@@ -58,7 +58,7 @@ namespace theParser
                     ou.videoInfo.Add(p);
 
                     ou.audioInfo = new List<outputFormatExtList>();
-                    ou.audioInfo.Add(new outputFormatAudio());
+                    ou.audioInfo.Add(new outputFormatAudio(ou.service.forceJlab035)); 
 
                     ou.title.value = conf.title;
                     ou.contents.set(conf.desc.Trim());
