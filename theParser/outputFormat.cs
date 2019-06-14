@@ -956,10 +956,10 @@ new genleTableStruct(0xf,0xf),
             setInfoLineToResult(this.copyControlMain.paramList, ref result);
             this.contentAvailability.makeList();
             setInfoLineToResult(this.contentAvailability.paramList, ref result);
-            this.encoderInfo.makeList();
-            setInfoLineToResult(this.encoderInfo.paramList, ref result);
-            this.ccj.makeList();
-            setInfoLineToResult(this.ccj.paramList, ref result);
+            // this.encoderInfo.makeList();
+            // setInfoLineToResult(this.encoderInfo.paramList, ref result);
+            // this.ccj.makeList();
+            // setInfoLineToResult(this.ccj.paramList, ref result);
 
             setInfoListToResult(this.extDescriptorInfo, ref result);
 

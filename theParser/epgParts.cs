@@ -950,7 +950,7 @@ namespace theParser
         }
         public epgServiceId(Int32 v) : this()
         {
-            this.setMinMax(1, 999);
+            this.setMinMax(0, 999);
             this.value = v;
         }
     }

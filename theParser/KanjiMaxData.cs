@@ -370,6 +370,11 @@ new videoDataStruct(1,0x93,"2160p-16:9", "２１６０ｐ１"),
             // es1 = new outputFormatAudio();
             outputFormatAudio es2 = null;
 
+                es1.makeTestDataSound(1, ref counter, ref soundKindCounter, ref soundNameCounter, true, false);
+                es2 = new outputFormatAudio(service.forceJlab035);
+                es2.makeTestDataSound(2, ref counter, ref soundKindCounter, ref soundNameCounter, true, false);
+
+#if nouse
             switch (counter % 6)
             {
             case 0:
@@ -401,7 +406,7 @@ new videoDataStruct(1,0x93,"2160p-16:9", "２１６０ｐ１"),
             default:
                 break;
             }
-
+#endif
             audio.Add(es1);
             if(es2 != null)
             {

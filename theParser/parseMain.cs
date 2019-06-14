@@ -10,6 +10,7 @@ using Microsoft.VisualBasic.FileIO;
 using System.Globalization;
 using System.ComponentModel;
 using System.Threading;
+using System.Net;
 
 namespace theParser
 {
@@ -22,7 +23,7 @@ namespace theParser
 
         public String XpathDefault = @"/html/body/div/div[contains(@id,'cell-{0}')]";
         public string TargetFolder = "";
-        private string siteUri = @"http://tv.so-net.ne.jp"; //"/chart/23.action?head=201208190000"
+        private string siteUri = @"https://tv.so-net.ne.jp"; //"/chart/23.action?head=201208190000"
         /// <summary>最大でも7日分しかサイトに置いてないっぽが…</summary>
         public Int32 DAYCOUNTMAX = 10;
         /// <summary>FORM上の設定</summary>
@@ -125,18 +126,27 @@ namespace theParser
             {
                 using (System.Net.WebClient wc = new System.Net.WebClient())
                 {
-                    using (System.IO.Stream st = wc.OpenRead(uri))
-                    {
-                        Encoding enc = Encoding.GetEncoding("utf-8");
-                        System.IO.StreamReader sr = new System.IO.StreamReader(st, enc);
-                        html = sr.ReadToEnd();
-                        if (filename.Length != 0)
-                        {
-                            System.IO.StreamWriter wr = new System.IO.StreamWriter(filename);
-                            wr.Write(html);
+                    wc.Encoding = System.Text.Encoding.UTF8;
+                    do {
+                        try{
+                            html = wc.DownloadString(uri);
+                        } catch ( WebException ex){
+                            if( ex.Status == WebExceptionStatus.SendFailure ){
+                                System.Threading.Thread.Sleep(500);
+                                continue;
+                            }
+                            bw.ReportProgress(progressValue, "OpenRead Error(" + uri.ToString() + ")" + ex.ToString());
+                            throw ex;
                         }
-                        System.Threading.Thread.Sleep(2000);
+                    } while ( false);
+                    if (filename.Length != 0)
+                    {
+                        System.IO.StreamWriter wr = new System.IO.StreamWriter(filename);
+                        wr.Write(html);
+                        wr.Dispose();
                     }
+                    wc.Dispose();
+                    System.Threading.Thread.Sleep(2000);
                 }
             }
             return html;
@@ -930,19 +940,31 @@ namespace theParser
             if( CopyControlPatternAry == null ){
                 CopyControlPatternAry = new List<CopyControlPattern>();
             }
+            CopyControlPatternAry.Add(new CopyControlPattern(-1,0,-1,0,0)); // 初期
+            CopyControlPatternAry.Add(new CopyControlPattern( 0,0, 0,1,0)); // copy control on
+            CopyControlPatternAry.Add(new CopyControlPattern(-1,0, 2,1,0)); // copy control on
+            CopyControlPatternAry.Add(new CopyControlPattern( 0,0, 3,1,0)); // copy control on
+            CopyControlPatternAry.Add(new CopyControlPattern( 0,1, 0,1,0)); // copy control on
+            CopyControlPatternAry.Add(new CopyControlPattern( 0,1, 3,1,0)); // copy control on
+            CopyControlPatternAry.Add(new CopyControlPattern( 1,0, 2,1,0)); // copy control on
+            CopyControlPatternAry.Add(new CopyControlPattern( 1,1, 3,1,0)); // copy control on
+            #if nouse
             if( CopyControlPatternAry.Count() == 0){
-                foreach(int a in new int[]{-1,0,1} ){
-                  foreach(int b in new int[]{0,1} ){
-                    foreach(int i in new int[]{-1,0,2,3} ){
-                      foreach(int j in new int[]{0,1} ){
-                        foreach(int k in new int[]{0,1,2,3} ){
-                           CopyControlPatternAry.Add(new CopyControlPattern(a,b,i,j,k));
+                foreach(int a in new int[]{-1,0,1} ){ // restriction
+                  foreach(int b in new int[]{0,1} ){ // encrypt
+                    foreach(int i in new int[]{-1,0,2,3} ){ // record
+                      foreach(int j in new int[]{0,1} ){ // CopyControl
+                        foreach(int k in new int[]{0,1,2,3} ) // APS
+                        { 
+                            CopyControlPatternAry.Add(new CopyControlPattern(a,b,i,j,k));
+                            //public CopyControlPattern(int rest, int encrypt,int record, int copycntl, int aps){
                         }
                       }
                     }
                   }
                 }
             }
+            #endif
             CopyControlPattern p =CopyControlPatternAry[index % CopyControlPatternAry.Count()];
             contTarget.restrictionmode.value = p.rest;
             contTarget.encryptionMode.value = p.enc;
@@ -953,6 +975,12 @@ namespace theParser
             return true;
         }
 
+        public bool setParentalPatternData(int index, ref outputFormatParental parental)
+        {
+            parental.rate.value = (index % (parental.rate.max + 1));
+            return true;
+        }
+
         private class CopyControlPattern {
             public int rest;
             public int enc;
@@ -960,12 +988,12 @@ namespace theParser
             public int copycntl;
             public int aps;
 
-            public CopyControlPattern(int r, int e,int a, int b, int c){
-                this.rest = r;
-                this.enc = e;
-                this.rec = a;
-                this.copycntl = b;
-                this.aps = c;
+            public CopyControlPattern(int rest, int encrypt,int record, int copycntl, int aps){
+                this.rest = rest;
+                this.enc = encrypt;
+                this.rec = record;
+                this.copycntl = copycntl;
+                this.aps = aps;
             }
         }
 
@@ -996,6 +1024,8 @@ namespace theParser
                                    "output File:" + service.serviceName.ToString() + "(" + lines.ToString() + " lines)");
             this.outputRenewFile(allservice.services);
         }
+
+
 
         private bool getEventDataMadara(serviceFormat service, DateTime today, DateTime lastDay)
         {
@@ -1265,6 +1295,9 @@ namespace theParser
         private List<outputFormatBasic> checkOutList(serviceFormat service, List<outputFormatBasic> org, DateTime start, DateTime end)
         {
             List<outputFormatBasic> result = new List<outputFormatBasic>();
+            if(org.Count() == 0){
+                return  result;
+            }
             IEnumerable<Int32> noDupIdListQuery = (from one in org
                                                    where one.serviceid.value == service.serviceId.value
                                                    select one.eventid.value).Distinct();

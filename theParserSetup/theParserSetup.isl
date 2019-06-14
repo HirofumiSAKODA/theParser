@@ -4381,7 +4381,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{4891580A-9681-484D-B9B2-F5AEF5C58920}</td><td/></row>
 		<row><td>ProductName</td><td>theParserSetup</td><td/></row>
-		<row><td>ProductVersion</td><td>1.17.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.19.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
