@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theParser", "theParser\theParser.csproj", "{E23CFF22-8F4D-42AA-9103-1B0531A9C4D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTimerClass", "MTimerClass\MTimerClass.csproj", "{6BE3B7FB-A8B1-4697-820A-91C77ED0DFFB}"
@@ -16,11 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.txt = README.txt
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "theParserSetup-2017", "theParserSetup-2017\theParserSetup-2017.vdproj", "{4A9EF116-A1EC-4CDD-B6D4-DB2E41BEB6FB}"
+EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
@@ -58,8 +58,20 @@ Global
 		{C592361D-CCD1-4B72-B931-CCED805105F9}.Release|Any CPU.ActiveCfg = SingleImage
 		{C592361D-CCD1-4B72-B931-CCED805105F9}.SingleImage|Any CPU.ActiveCfg = SingleImage
 		{C592361D-CCD1-4B72-B931-CCED805105F9}.SingleImage|Any CPU.Build.0 = SingleImage
+		{4A9EF116-A1EC-4CDD-B6D4-DB2E41BEB6FB}.CD_ROM|Any CPU.ActiveCfg = Release
+		{4A9EF116-A1EC-4CDD-B6D4-DB2E41BEB6FB}.Debug|Any CPU.ActiveCfg = Debug
+		{4A9EF116-A1EC-4CDD-B6D4-DB2E41BEB6FB}.DVD-5|Any CPU.ActiveCfg = Debug
+		{4A9EF116-A1EC-4CDD-B6D4-DB2E41BEB6FB}.Release|Any CPU.ActiveCfg = Release
+		{4A9EF116-A1EC-4CDD-B6D4-DB2E41BEB6FB}.SingleImage|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B2571C3-5FBD-4B0F-89E1-EE210D7EED85}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal
