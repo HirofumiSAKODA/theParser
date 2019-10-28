@@ -219,6 +219,8 @@ namespace theParser
                     }
 
                     // コピー制御
+                    copyControlData cp = new copyControlData(5); // コピワン
+#if COPYCONTROLALLPATTERN
                     copyControlData cp = new copyControlData(copyControlValue);
                     copyControlValue++;
                     if (cp.copyControl != null && cp.contents != null)
@@ -228,6 +230,7 @@ namespace theParser
                         // コピー制御: 制御結果を拡張EPGをデータの1行目に記述
                         addExtDesctioptionList("コピー制御", cp.descripion, ref ou.extDescriptorInfo);
                     }
+#endif
 
                     // エンコーダ情報
                     ou.encoderInfo.rate.value = rnd.Next(100000);
@@ -948,7 +951,7 @@ namespace theParser
             CopyControlPatternAry.Add(new CopyControlPattern( 0,1, 3,1,0)); // copy control on
             CopyControlPatternAry.Add(new CopyControlPattern( 1,0, 2,1,0)); // copy control on
             CopyControlPatternAry.Add(new CopyControlPattern( 1,1, 3,1,0)); // copy control on
-            #if nouse
+#if nouse
             if( CopyControlPatternAry.Count() == 0){
                 foreach(int a in new int[]{-1,0,1} ){ // restriction
                   foreach(int b in new int[]{0,1} ){ // encrypt
@@ -964,7 +967,7 @@ namespace theParser
                   }
                 }
             }
-            #endif
+#endif
             CopyControlPattern p =CopyControlPatternAry[index % CopyControlPatternAry.Count()];
             contTarget.restrictionmode.value = p.rest;
             contTarget.encryptionMode.value = p.enc;
