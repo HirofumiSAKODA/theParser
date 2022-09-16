@@ -179,43 +179,59 @@ namespace theParser
                     // 101024201208190005.action.htm
                     //doc.Load(@"C:\Users\kooh\Downloads\101024201208190005.action.htm", Encoding.UTF8, true, (512 * 1024));//
 
-                    HtmlNodeCollection ddList = doc.DocumentNode.SelectNodes(@"/html/body/div/div/div/dl/dd");
+                    HtmlNodeCollection ddList;
+                    ddList = doc.DocumentNode.SelectNodes(@"/html/body/div/div/div/dl/dd");
                     if (ddList == null || ddList.Count == 0)
                     {
                         // this.textBox1.Text = "(nothing...)";
-                        throw new Exception("no dd list");
+                        // throw new Exception("no dd list");
+                        ddList = doc.DocumentNode.SelectNodes(@"/html/body/div/div/div");
                     }
-
-                    // ddList[1].InnerText
 
                     // get duration
-                    ou.duration.value = getDurationFromFromText(ddList[1].InnerText);
-                    HtmlNodeCollection spanList = doc.DocumentNode.SelectNodes(@"/html/body/div/div/div/div/span");
-                    if (spanList == null || spanList.Count == 0)
+                    ou.duration.value = getDurationFromFromText(ddList);
+                    if ( ou.duration.value  < 0)
                     {
-                        throw new Exception("no span list");
+                        ou.duration.value = 5;
                     }
-                    List<string> attrList = new List<string>();
-                    foreach (HtmlNode span in spanList)
-                    {
-                        // this.textBox1.Text += span.InnerText + ",";
-                        attrList.Add(span.InnerText);
-                    }
+                    // ou.duration.value = getDurationFromFromText(ddList[0].InnerText);  // 2022-09-16 Design が変更になった、かな?
+
+                    // Video attribute
+                    //HtmlNodeCollection spanList = doc.DocumentNode.SelectNodes(@"/html/body/div/div/div/div/span");
+                    //if (spanList == null || spanList.Count == 0)
+                    //{
+                        //throw new Exception("no span list");
+                    //}
+                    //List<string> attrList = new List<string>();
+                    //foreach (HtmlNode span in spanList)
+                    //{
+                        //// this.textBox1.Text += span.InnerText + ",";
+                        //attrList.Add(span.InnerText);
+                    //}
                     // <span class="bgChipGry">HD</span>
                     // <span class="bgChipGry">16:9</span>
                     // <span class="bgChipGry">コピー可</span>
-                    HtmlNodeCollection videoInfo = doc.DocumentNode.SelectNodes(@"/html[1]/body[1]/div[5]/div[1]/div[3]/div[1]");
+                    // HtmlNodeCollection videoInfo = doc.DocumentNode.SelectNodes(@"/html[1]/body[1]/div[5]/div[1]/div[3]/div[1]");
 
                     // ジャンル調査
-                    HtmlNodeCollection genleLinkList = doc.DocumentNode.SelectNodes(@"/html[1]/body[1]/div[5]/div[1]/div[1]/dl[1]/dd[4]/a");
+                    // HtmlNodeCollection genleLinkList = doc.DocumentNode.SelectNodes(@"/html[1]/body[1]/div[5]/div[1]/div[1]/dl[1]/dd[4]/a");
+                    HtmlNodeCollection genleLinkList = doc.DocumentNode.SelectNodes(@"//ul[@class='pginfo-link']/li");
                     if (genleLinkList == null || genleLinkList.Count == 0)
                     {
                         // 見つからず。
                     }
                     else
                     {   // ジャンルは今のところ一つ
-                        outputFormatGenle outGenle = getGenleData(genleLinkList);
-                        ou.genleInfo.Add(outGenle);
+                        foreach(HtmlNode eachGenle in genleLinkList)
+                        {
+
+                            HtmlNode oneGenle = eachGenle.SelectSingleNode("a");
+                            ou.genleInfo.Add(getGenleData(oneGenle));
+                            break;
+                        }
+                        // HtmlNodeCollection eachJunle = doc.DocumentNode.SelectNodes(@"//ul[@class='pginfo-link']/li");
+                        // outputFormatGenle outGenle = getGenleData(genleLinkList);
+                        // ou.genleInfo.Add(outGenle);
                     }
 
                     // コピー制御
@@ -350,17 +366,29 @@ namespace theParser
             return outGenle;
         }
 
+        private outputFormatGenle getGenleData(HtmlNode oneNode)
+        {
+            outputFormatGenle outGenle = new outputFormatGenle();
+            Match mgenle = genlePattern.Match(oneNode.GetAttributeValue("href","0"));// .InnerHtml);
+            outGenle.genleBig.valueSetFromParse(mgenle.Groups["genle"].ToString());
+            return outGenle;
+
+        }
+
         private Regex durationPattern; // コンストラクタ内で初期化
 
-        private int getDurationFromFromText(string p)
+        private int getDurationFromFromText(HtmlNodeCollection list)
         {
             int result;
-            Match m = durationPattern.Match(p);
-            if (Int32.TryParse(m.Groups["duration"].ToString(), out result) == true)
+            foreach (HtmlNode dd in list)
             {
-                return result;
+                Match m = durationPattern.Match(input: dd.InnerText);
+                if (Int32.TryParse(m.Groups["duration"].ToString(), out result) == true)
+                {
+                    return result;
+                }
             }
-            return 5;
+            return -1;
         }
 
         /// <summary>
@@ -1235,13 +1263,13 @@ namespace theParser
 
                                 if (existsFile == false)
                                 {
-                                    this.bw.ReportProgress(progressValue, "get from Internet " + ou.eventtime.value.ToString() + " " + titleMsg.ToString());
+                                    this.bw.ReportProgress(progressValue, "get from Internet " + ou.eventtime.value.ToString() + " (" + ou.duration.value.ToString() + ") " +  titleMsg.ToString());
                                 }
                                 else
                                 {
                                     if (dispMessageFlag == false)
                                     {
-                                        this.bw.ReportProgress(progressValue, "get from Local Cache(first) " + ou.eventtime.value.ToString() + " " + titleMsg.ToString());
+                                        this.bw.ReportProgress(progressValue, "get from Local Cache(first) " + ou.eventtime.value.ToString() + " (" + ou.duration.value.ToString() + ") " +  titleMsg.ToString());
                                         dispMessageFlag = true;
                                     }
                                 }
