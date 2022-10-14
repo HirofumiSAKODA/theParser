@@ -30,7 +30,7 @@ namespace theParser
 
         public KanjiMaxData(settings set)
         {
-            this.kanji = new arib2byteChar(set.conf.aribGaiji);
+            this.kanji = new arib2byteChar(set.conf.aribGaiji, set.conf.TargetFolder);
         }
 
         public override List<outputFormatBasic> getData()

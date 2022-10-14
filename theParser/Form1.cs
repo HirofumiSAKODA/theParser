@@ -247,7 +247,7 @@ namespace theParser
         private void button2_Click(object sender, EventArgs e)
         {
             this.button2.Enabled = false;
-            arib2byteChar kanji = new arib2byteChar(true);
+            arib2byteChar kanji = new arib2byteChar(true, this.textBox4.Text);
             List<byte> letter = new List<byte>();
             List<byte> line = new List<byte>();
             Int32 prevKanjiTabeNum = 0;

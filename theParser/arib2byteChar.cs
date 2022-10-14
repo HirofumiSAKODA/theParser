@@ -126,6 +126,8 @@ namespace theParser
         public Int32 endChar = 0xffff;
         public bool aribGaiji = false;
 
+        private string pathGaijiFile;
+
         public abstract class charFromTableBase 
         {
             public tableRange myRange;
@@ -394,9 +396,10 @@ namespace theParser
             return true;
         }
 
-        public arib2byteChar(bool gaiji)
+        public arib2byteChar(bool gaiji, string path)
         {
             this.aribGaiji = gaiji;
+            this.pathGaijiFile = path;
             arib2byteCharInit();
         }
 
@@ -519,11 +522,19 @@ namespace theParser
 
         private List<Int32> getSjisCodeList()
         {
-            return getSjisCodeList(Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%"));
+            if (string.IsNullOrEmpty(this.pathGaijiFile))
+            {
+                this.pathGaijiFile = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
+            }
+            return getSjisCodeList(this.pathGaijiFile);
         }
         private List<Int32> getUtf8CodeList()
         {
-            return getUtf8CodeList(Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%"));
+            if (string.IsNullOrEmpty(this.pathGaijiFile))
+            {
+                this.pathGaijiFile = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
+            }
+            return getUtf8CodeList(this.pathGaijiFile);
         }
 
         private Int32 utf8TableCounter = 0;
